@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.daily.press.monitor", appContext.getPackageName());
+        assertEquals("com.daily.press.zjol", appContext.getPackageName());
     }
 }

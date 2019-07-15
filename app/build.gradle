@@ -20,7 +20,7 @@ android {
     }
 
     signingConfigs {
-        monitor {
+        zjol {
             storeFile signFile
             storePassword password
             keyAlias alias
@@ -32,7 +32,7 @@ android {
     buildTypes {
         debug {
             readKeys(debug)
-            signingConfig signingConfigs.monitor
+            signingConfig signingConfigs.zjol
             buildConfigField "boolean", "API_DEBUG", "true"
             minifyEnabled false
             debuggable isDebug
@@ -41,7 +41,7 @@ android {
 
         release {
             readKeys(release)
-            signingConfig signingConfigs.monitor
+            signingConfig signingConfigs.zjol
             buildConfigField "boolean", "API_DEBUG", "false"
             minifyEnabled true
             debuggable isDebug
