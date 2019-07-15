@@ -1,0 +1,59 @@
+ext {
+    //Jenkins 打包修改版本使用日常开发删除 zjol.properties
+    file = project.rootProject.file('zjol.properties')
+    if (file != null && file.exists()) {
+        Properties properties = new Properties()
+        InputStream inputStream = file.newDataInputStream()
+        properties.load(inputStream)
+
+        appVersionCode = Integer.parseInt(properties.getProperty("appVersionCode"))
+        appVersionName = properties.getProperty('appVersionName')
+        env = properties.getProperty('env')
+        scheme = "http"
+        isDebug = Boolean.parseBoolean(properties.getProperty("isDebug"))
+    } else {
+        appVersionCode = 20001
+        appVersionName = "2.0.1"
+        env = "10.100.64.99"
+        scheme = "http"
+        isDebug = true
+    }
+
+    //签名相关
+    signFile = file("${project.getProjectDir()}/sign/sign.keystore")
+    if (signFile == null || !signFile.exists()) {
+        throw new FileNotFoundException("签名文件不存在")
+    }
+    signProperiesFile = file("${project.getProjectDir()}/sign/sign.properties")
+    if (signProperiesFile == null || !signProperiesFile.exists()) {
+        throw new FileNotFoundException("签名密码和别名属性文件不存在")
+    }
+
+    signProperies = new Properties()
+    signProperies.load(signProperiesFile.newDataInputStream())
+
+    password = signProperies.getProperty('password')
+    alias = signProperies.getProperty('alias')
+    alias_password = signProperies.getProperty('alias_password')
+
+}
+
+ext.readKeys = { buildType ->
+    //程序中的KEY 配置
+    String keysName = 'keys-release.properties'
+    if (isDebug) {
+        keysName = 'keys-debug.properties'
+    }
+
+    Properties properties = new Properties()
+    properties.load(new FileInputStream(keysName))
+
+    buildType.resValue "string", "env_host_default", env
+    buildType.resValue "string", "env_scheme_default", scheme
+    buildType.resValue("string", "BUGLY_APPID", properties.getProperty("BUGLY_APPID"))
+    buildType.manifestPlaceholders = [
+            GETUI_APP_ID : properties.getProperty("GETUI_APP_ID"),
+            GETUI_APP_SECRET : properties.getProperty("GETUI_APP_SECRET"),
+            GETUI_APP_KEY : properties.getProperty("GETUI_APP_KEY")
+    ]
+}

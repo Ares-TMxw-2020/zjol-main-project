@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">浙江在线</string>
+    <!-- release env -->
+    <string name="env_host_online">https://www.zjol.com.cn</string>
+
+    <!-- router path-->
+    <string name="default_scheme">http</string>
+    <string name="default_host">www.zjol.com.cn</string>
+    <string name="data_scheme">http</string>
+    <string name="data_host">www.zjol.com.cn</string>
+
+    <string name="text_test_channel">测试渠道</string>
+</resources>

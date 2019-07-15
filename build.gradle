@@ -1,0 +1,29 @@
+apply from: 'zjoladle'
+
+buildscript {
+
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+        mavenLocal()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.2.1'
+        classpath 'com.meituan.android.walle:plugin:1.1.6'
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        maven { url "http://10.100.62.98:8086/nexus/content/groups/public/" }
+        maven { url 'http://pre.haier.com/nexus/content/repositories/qdmobile-release/' }
+        maven { url "http://mvn.gt.igexin.com/nexus/content/repositories/releases/" }
+        google()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

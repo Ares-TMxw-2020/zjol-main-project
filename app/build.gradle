@@ -1,0 +1,77 @@
+apply plugin: 'com.android.application'
+apply from: 'version.gradle'
+apply plugin: 'walle'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "cn.com.zjol"
+        minSdkVersion 17
+        targetSdkVersion 28
+        versionCode appVersionCode
+        versionName appVersionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        multiDexEnabled true
+
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a", "arm64-v8a"
+        }
+    }
+
+    signingConfigs {
+        monitor {
+            storeFile signFile
+            storePassword password
+            keyAlias alias
+            keyPassword alias_password
+            v2SigningEnabled true
+        }
+    }
+
+    buildTypes {
+        debug {
+            readKeys(debug)
+            signingConfig signingConfigs.monitor
+            buildConfigField "boolean", "API_DEBUG", "true"
+            minifyEnabled false
+            debuggable isDebug
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        release {
+            readKeys(release)
+            signingConfig signingConfigs.monitor
+            buildConfigField "boolean", "API_DEBUG", "false"
+            minifyEnabled true
+            debuggable isDebug
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError true
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}
+
+/*
+  美团打包命令
+  生成全部渠道包：./gradlew clean assembleReleaseChannels
+  生成大屏渠道包：./gradlew clean assembleReleaseChannels -PchannelList=big
+  生成部分渠道包：./gradlew clean assembleReleaseChannels -PchannelList=xiaomi
+ */
+walle {
+
+    apkOutputFolder = new File("${project.buildDir}/outputs/channels")
+    apkFileNameFormat = '${channel}-v${versionName}-${versionCode}-${buildTime}.apk'
+    channelFile = new File("${project.getProjectDir()}/channel")
+}
