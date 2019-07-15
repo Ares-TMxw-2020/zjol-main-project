@@ -12,8 +12,8 @@ ext {
         scheme = "http"
         isDebug = Boolean.parseBoolean(properties.getProperty("isDebug"))
     } else {
-        appVersionCode = 20001
-        appVersionName = "2.0.1"
+        appVersionCode = 10000
+        appVersionName = "1.0.0"
         env = "10.100.64.99"
         scheme = "http"
         isDebug = true
