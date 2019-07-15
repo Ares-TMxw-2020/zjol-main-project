@@ -1,4 +1,4 @@
-apply from: 'zjoladle'
+apply from: 'zjol.gradle'
 
 buildscript {
 

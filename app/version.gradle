@@ -33,6 +33,7 @@ configurations.all {
         force 'cn.daily.android:bottom-navigation-view:0.0.1'
 
         //浙江在线模块依赖
+        force 'cn.com.zjol:launcher:0.0.1-SNAPSHOT'
     }
 }
 
@@ -103,4 +104,8 @@ dependencies {
     }
 
     //浙江在线模块依赖
+    implementation ('cn.com.zjol:launcher:0.0.1-SNAPSHOT'){
+        transitive false
+        changing true
+    }
 }
