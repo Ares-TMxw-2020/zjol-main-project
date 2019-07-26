@@ -24,8 +24,12 @@ configurations.all {
         force 'com.google.zxing:core:3.3.0'
 
         //内部通用依赖
+        force 'com.aliya:ratioview:1.0.0'
+        force 'com.aliya:bannerview:2.1.0'
+        force 'com.aliya:permission:0.5.0'
+
         force 'com.core:network:0.0.1'
-        force 'cn.daily.android:common-core:0.0.4'
+        force 'cn.daily.android:common-core:0.0.6.49'
         force 'com.aliya:android-uimode:2.0.8'
         force 'com.aliya:fitwindow:1.0.0'
         force 'cn.core.android:core-glide:1.0.0'
@@ -69,6 +73,9 @@ dependencies {
     implementation 'com.google.zxing:core:3.3.0'
 
     //内部通用依赖
+    implementation 'com.aliya:bannerview:2.0.2'
+    implementation 'com.aliya:ratioview:0.1.2'
+    implementation 'com.aliya:permission:0.5.0'
     implementation('cn.daily.android:common-core:0.0.3.2-SNAPSHOT') {
         transitive false
         changing true
