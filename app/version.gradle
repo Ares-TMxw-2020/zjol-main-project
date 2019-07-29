@@ -27,6 +27,7 @@ configurations.all {
         force 'com.aliya:ratioview:1.0.0'
         force 'com.aliya:bannerview:2.1.0'
         force 'com.aliya:permission:0.5.0'
+        force 'cn.daily.android:dark-status-bar:1.0.2'
 
         force 'com.core:network:0.0.1'
         force 'cn.daily.android:common-core:0.0.6.49'
@@ -39,7 +40,7 @@ configurations.all {
         //浙江在线模块依赖
         force 'cn.com.zjol:launcher:0.0.1.1'
         force 'cn.com.zjol:news:0.0.1.4'
-        force 'cn.com.zjol:me:0.0.1-SNAPSHOT'
+        force 'cn.com.zjol:me:0.0.1.2-SNAPSHOT'
         force 'cn.com.zjol:biz-core:0.0.1-SNAPSHOT'
         force 'cn.com.zjol:video:0.0.1-SNAPSHOT'
     }
@@ -77,6 +78,7 @@ dependencies {
     implementation 'com.aliya:bannerview:2.0.2'
     implementation 'com.aliya:ratioview:0.1.2'
     implementation 'com.aliya:permission:0.5.0'
+    implementation 'cn.daily.android:dark-status-bar:1.0.2'
     implementation('cn.daily.android:common-core:0.0.3.2-SNAPSHOT') {
         transitive false
         changing true
@@ -115,29 +117,29 @@ dependencies {
     }
 
     //浙江在线模块依赖
-    implementation ('cn.com.zjol:launcher:0.0.1-SNAPSHOT'){
+    implementation('cn.com.zjol:launcher:0.0.1-SNAPSHOT') {
         transitive false
         changing true
     }
 
     //浙江在线模块依赖
-    implementation ('cn.com.zjol:news:0.0.1.4'){
+    implementation('cn.com.zjol:news:0.0.1.4') {
         transitive false
         changing true
     }
 
     //浙江在线模块依赖
-    implementation ('cn.com.zjol:me:0.0.1-SNAPSHOT'){
+    implementation('cn.com.zjol:me:0.0.1.2-SNAPSHOT') {
         transitive false
         changing true
     }
 
-    implementation ('cn.com.zjol:biz-core:0.0.1-SNAPSHOT'){
+    implementation('cn.com.zjol:biz-core:0.0.1-SNAPSHOT') {
         transitive false
         changing true
     }
 
-    implementation ('cn.com.zjol:video:0.0.1-SNAPSHOT'){
+    implementation('cn.com.zjol:video:0.0.1-SNAPSHOT') {
         transitive false
         changing true
     }
