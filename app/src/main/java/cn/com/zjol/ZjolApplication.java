@@ -8,6 +8,11 @@ import com.meituan.android.walle.WalleChannelReader;
 import com.tencent.bugly.crashreport.CrashReport;
 import com.zjrb.core.utils.AppUtils;
 import com.zjrb.core.utils.UIUtils;
+import com.zjrb.daily.db.DatabaseLoader;
+import com.zjrb.daily.db.dao.ReadNewsDaoHelper;
+
+import cn.com.zjol.biz.core.db.SettingManager;
+import cn.com.zjol.biz.core.network.DailyNetworkManager;
 
 public class ZjolApplication extends MultiDexApplication {
 
@@ -17,7 +22,12 @@ public class ZjolApplication extends MultiDexApplication {
         super.onCreate();
         UIUtils.init(this);
         UiModeManager.init(this, null);
+        DailyNetworkManager.init(this);
+        DatabaseLoader.init(this);
+        ReadNewsDaoHelper.initReadIds();
 
+        // TODO: 2019/7/31
+        AppUtils.setChannel("bianfeng");
         initGeTui();
         initBugly();
     }
