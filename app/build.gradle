@@ -81,4 +81,3 @@ walle {
     apkFileNameFormat = '${channel}-v${versionName}-${versionCode}-${buildTime}.apk'
     channelFile = new File("${project.getProjectDir()}/channel")
 }
-
