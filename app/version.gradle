@@ -30,7 +30,7 @@ configurations.all {
         force 'com.aliya:permission:0.5.0'
         force 'cn.daily.android:dark-status-bar:1.0.2'
 
-        force 'com.core:network:0.0.1'
+        force 'com.core:network:0.0.7'
         force 'cn.daily.android:common-core:0.0.6.49'
         force 'com.aliya:android-uimode:2.0.8'
         force 'com.aliya:fitwindow:1.0.0'
@@ -40,7 +40,7 @@ configurations.all {
 
         //浙江在线模块依赖
         force 'cn.com.zjol:launcher:0.0.1.2'
-        force 'cn.com.zjol:news:0.0.1.5'
+        force 'cn.com.zjol:news:0.0.1.6'
         force 'cn.com.zjol:me:0.0.1.2-SNAPSHOT'
         force 'cn.com.zjol:biz-core:0.0.1.2-SNAPSHOT'
         force 'cn.com.zjol:video:0.0.1-SNAPSHOT'

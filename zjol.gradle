@@ -14,7 +14,7 @@ ext {
     } else {
         appVersionCode = 10000
         appVersionName = "1.0.0"
-        env = "10.100.64.99"
+        env = "10.105.2.58:8085"
         scheme = "http"
         isDebug = true
     }
