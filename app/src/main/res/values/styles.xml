@@ -1,17 +1,25 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
     </style>
 
     <style name="SplashTheme" parent="@android:style/Theme.Black.NoTitleBar.Fullscreen">
         <!--<item name="android:windowBackground">@drawable/splash_background</item>-->
         <item name="android:windowAnimationStyle">@style/SplashWindowAnimation</item>
     </style>
+
     <style name="SplashWindowAnimation" parent="@android:style/Animation.Activity">
         <!--<item name="android:activityOpenEnterAnimation">@anim/in_from_right</item>-->
         <!--<item name="android:activityCloseExitAnimation">@anim/out_to_right</item>-->
@@ -19,10 +27,13 @@
         <!--<item name="android:activityCloseEnterAnimation">@anim/no_anim</item>-->
     </style>
 
+    <style name="TranslucentBarTheme" parent="AppTheme" />
+
     <style name="FullscreenTheme" parent="AppTheme">
         <item name="windowNoTitle">true</item>
         <item name="android:windowFullscreen">true</item>
     </style>
+
     <style name="launcher_bottom_text">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
