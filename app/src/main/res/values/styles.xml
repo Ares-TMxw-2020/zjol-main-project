@@ -1,53 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
-
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-
-        <item name="android:windowContentOverlay">@null</item>
-        <item name="android:colorBackgroundCacheHint">@null</item>
-        <item name="android:windowIsTranslucent">true</item>
+    <style name="CoreTheme.Base" parent="@style/CoreTheme">
+        <item name="android:fontFamily">@font/fzbiaoysk_zbjt</item>
     </style>
+    <style name="AppTheme" parent="CoreTheme.Base"/>
 
-    <style name="SplashTheme" parent="@android:style/Theme.Black.NoTitleBar.Fullscreen">
-        <!--<item name="android:windowBackground">@drawable/splash_background</item>-->
-        <item name="android:windowAnimationStyle">@style/SplashWindowAnimation</item>
-    </style>
-
-    <style name="SplashWindowAnimation" parent="@android:style/Animation.Activity">
-        <!--<item name="android:activityOpenEnterAnimation">@anim/in_from_right</item>-->
-        <!--<item name="android:activityCloseExitAnimation">@anim/out_to_right</item>-->
-        <!--<item name="android:activityOpenExitAnimation">@anim/no_anim</item>-->
-        <!--<item name="android:activityCloseEnterAnimation">@anim/no_anim</item>-->
-    </style>
-
-    <style name="TranslucentBarTheme" parent="AppTheme" />
-
-    <style name="FullscreenTheme" parent="AppTheme">
-        <item name="windowNoTitle">true</item>
-        <item name="android:windowFullscreen">true</item>
-    </style>
-
-    <style name="launcher_bottom_text">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">match_parent</item>
-        <item name="android:layout_weight">1</item>
+    <!--通用topbar样式-->
+    <style name="ToolbarTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/toolbar_normal_height</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">@dimen/ts_17sp</item>
         <item name="android:gravity">center</item>
-        <!--<item name="android:textColor">@color/launcher_bottom_text_color</item>-->
-        <item name="android:textSize">14sp</item>
+        <item name="android:maxLines">1</item>
         <item name="android:fontFamily">@font/fzzcysk_zbjt</item>
-        <item name="android:button">@null</item>
-    </style>
-
-    <!-- 边缘手势显示桌面解决方案 -->
-    <style name="AppMainTheme" parent="AppTheme">
-        <item name="android:windowIsTranslucent">false</item>
-        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:layout_marginLeft">@dimen/toolbar_normal_height</item>
+        <item name="android:layout_marginRight">@dimen/toolbar_normal_height</item>
     </style>
 </resources>

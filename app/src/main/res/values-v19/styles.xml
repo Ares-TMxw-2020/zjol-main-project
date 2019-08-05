@@ -1,8 +1,15 @@
 <resources>
 
-
     <!--TranslucentBar主题，仅针对API 19的设置在这-->
-    <style name="TranslucentBarTheme" parent="AppTheme" >
+    <style name="CoreTheme.Base" parent="CoreTheme">
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:fontFamily">@font/fzbiaoysk_zbjt</item>
+
+    </style>
+
+    <!--夜间模式 同上-->
+    <style name="CoreThemeNight.Base" parent="CoreTheme">
         <item name="android:windowTranslucentStatus">true</item>
         <item name="android:windowTranslucentNavigation">false</item>
     </style>
