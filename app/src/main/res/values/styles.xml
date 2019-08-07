@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <style name="CoreTheme.Base" parent="@style/CoreTheme">
         <item name="android:fontFamily">@font/fzbiaoysk_zbjt</item>
     </style>
-    <style name="AppTheme" parent="CoreTheme.Base"/>
+
+    <style name="AppTheme" parent="CoreTheme.Base" />
 
     <!--通用topbar样式-->
     <style name="ToolbarTitle">
