@@ -11,8 +11,8 @@ import com.zjrb.core.utils.UIUtils;
 import com.zjrb.daily.db.DatabaseLoader;
 import com.zjrb.daily.db.dao.ReadNewsDaoHelper;
 
-import cn.com.zjol.biz.core.db.SettingManager;
 import cn.com.zjol.biz.core.network.DailyNetworkManager;
+import cn.com.zjol.push.Push;
 
 public class ZjolApplication extends MultiDexApplication {
 
@@ -24,6 +24,7 @@ public class ZjolApplication extends MultiDexApplication {
         UiModeManager.init(this, null);
         DailyNetworkManager.init(this);
         DatabaseLoader.init(this);
+        Push.init(this);
         ReadNewsDaoHelper.initReadIds();
 
         // TODO: 2019/7/31
@@ -35,7 +36,7 @@ public class ZjolApplication extends MultiDexApplication {
     /**
      * 初始化个推配置
      */
-    private void initGeTui(){
+    private void initGeTui() {
     }
 
     /**
