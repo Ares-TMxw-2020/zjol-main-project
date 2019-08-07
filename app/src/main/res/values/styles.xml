@@ -5,7 +5,9 @@
         <item name="android:fontFamily">@font/fzbiaoysk_zbjt</item>
     </style>
 
-    <style name="AppTheme" parent="CoreTheme.Base" />
+    <style name="AppTheme" parent="CoreTheme.Base">
+        <item name="android:windowBackground">@color/colorPrimary</item>
+    </style>
 
     <!--通用topbar样式-->
     <style name="ToolbarTitle">
