@@ -29,6 +29,7 @@ configurations.all {
         force 'com.aliya:bannerview:2.1.0'
         force 'com.aliya:permission:0.5.0'
         force 'cn.daily.android:dark-status-bar:1.0.2'
+        force 'cn.daily.android:daily-db:6.0.1'
 
         force 'com.core:network:0.0.7'
         force 'cn.daily.android:common-core:0.0.6.49'
@@ -39,8 +40,8 @@ configurations.all {
         force 'cn.daily.android:bottom-navigation-view:0.0.1'
 
         //浙江在线模块依赖
-        force 'cn.com.zjol:launcher:0.0.1.5'
-        force 'cn.com.zjol:news:0.0.1.6'
+        force 'cn.com.zjol:launcher:0.0.1.6'
+        force 'cn.com.zjol:news:0.0.1.10'
         force 'cn.com.zjol:me:0.0.1.3-SNAPSHOT'
         force 'cn.com.zjol:biz-core:0.0.1.2-SNAPSHOT'
         force 'cn.com.zjol:video:0.0.1-SNAPSHOT'
@@ -147,7 +148,7 @@ dependencies {
         transitive false
         changing true
     }
-    implementation('cn.com.zjol:db:0.0.1-SNAPSHOT') {
+    implementation('cn.daily.android:daily-db:6.0.1'){
         transitive false
         changing true
     }
@@ -155,4 +156,5 @@ dependencies {
         transitive false
         changing true
     }
+
 }
