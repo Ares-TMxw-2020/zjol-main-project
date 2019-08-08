@@ -48,7 +48,6 @@ configurations.all {
         force 'cn.daily.android:common-webview:1.0.0.130'
         force 'com.aliya:ratioview:1.0.0'
         force 'com.aliya:fitwindow:1.0.0'
-        force 'com.aliya:bannerview:2.1.0'
         force 'com.core:network:0.0.7'
         force 'cn.daily.android:android-player:0.3.2.66'
         force 'com.aliya:ratioview:1.0.0'
@@ -67,7 +66,7 @@ configurations.all {
         force 'cn.daily.android:bottom-navigation-view:0.0.1'
 
         //浙江在线模块依赖
-        force 'cn.com.zjol:launcher:0.0.1.9'
+        force 'cn.com.zjol:launcher:0.0.1.10'
         force 'cn.com.zjol:news:0.0.1.12'
         force 'cn.com.zjol:me:0.0.1.3-SNAPSHOT'
         force 'cn.com.zjol:biz-core:0.0.1.4-SNAPSHOT'
