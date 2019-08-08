@@ -19,6 +19,24 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="ZBP_APP_ID"
+            android:value="1"/>
+        <meta-data
+            android:name="MW_APPID"
+            android:value="B5CYHNBKB3SSNGJXX10D2UJVJAU7G3T8" />
+        <meta-data
+            android:name="SHWANALYTICS_APPKEY"
+            android:value="zm1027-002" />
+        <meta-data
+            android:name="SHWANALYTICS_CHANNEL"
+            android:value="yyb" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
     </application>
 
 </manifest>
