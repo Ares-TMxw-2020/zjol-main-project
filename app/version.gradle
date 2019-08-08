@@ -47,6 +47,7 @@ configurations.all {
         force 'cn.com.zjol:video:0.0.1-SNAPSHOT'
         force 'cn.com.zjol:push:0.0.1.1-SNAPSHOT'
         force 'cn.com.zjol:player:0.0.1.1'
+        force 'cn.com.zjol:detail:0.0.1-SNAPSHOT'
     }
 }
 
@@ -160,5 +161,8 @@ dependencies {
         transitive false
         changing true
     }
-
+    implementation('cn.com.zjol:detail:0.0.1-SNAPSHOT') {
+        transitive false
+        changing true
+    }
 }
