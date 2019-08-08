@@ -43,7 +43,7 @@ configurations.all {
         force 'cn.com.zjol:launcher:0.0.1.8'
         force 'cn.com.zjol:news:0.0.1.10'
         force 'cn.com.zjol:me:0.0.1.3-SNAPSHOT'
-        force 'cn.com.zjol:biz-core:0.0.1.2-SNAPSHOT'
+        force 'cn.com.zjol:biz-core:0.0.1.4-SNAPSHOT'
         force 'cn.com.zjol:video:0.0.1-SNAPSHOT'
         force 'cn.com.zjol:push:0.0.1.1-SNAPSHOT'
     }
