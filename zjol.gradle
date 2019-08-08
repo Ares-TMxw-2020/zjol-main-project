@@ -14,8 +14,8 @@ ext {
     } else {
         appVersionCode = 10000
         appVersionName = "1.0.0"
-        env = "apibeta.8531.cn"
-        scheme = "https"
+        env = "10.105.2.58:8085"
+        scheme = "http"
         isDebug = true
     }
 
