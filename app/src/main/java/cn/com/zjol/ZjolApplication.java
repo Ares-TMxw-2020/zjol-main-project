@@ -2,9 +2,7 @@ package cn.com.zjol;
 
 import android.app.ActivityManager;
 import android.content.Context;
-import android.support.multidex.MultiDex;
 import android.support.multidex.MultiDexApplication;
-import android.support.v7.app.AppCompatDelegate;
 import android.text.TextUtils;
 
 import com.aliya.uimode.UiModeManager;
@@ -30,6 +28,7 @@ import cn.com.zjol.biz.core.db.CompatV4DB;
 import cn.com.zjol.biz.core.db.SettingManager;
 import cn.com.zjol.biz.core.db.ThemeMode;
 import cn.com.zjol.biz.core.network.DailyNetworkManager;
+import cn.com.zjol.push.Push;
 import cn.daily.news.analytics.AnalyticsManager;
 import cn.daily.news.update.UpdateManager;
 
@@ -60,7 +59,7 @@ public class ZjolApplication extends MultiDexApplication {
                     DatabaseLoader.init(UIUtils.getApp());
                     ReadRecordHelper.initReadIds();
                     GlideMode.setProvincialTraffic(SettingManager.getInstance().isProvincialTraffic());
-
+                    Push.init(UIUtils.getApp());
                 }
             }).start();
         }
@@ -104,7 +103,7 @@ public class ZjolApplication extends MultiDexApplication {
                         .setDebug(isDebug)
                         .setHost(passport)
                         .setAppVersion("1.0")
-                        .setClientId(isDebug?Integer.parseInt(clientId):9)
+                        .setClientId(isDebug ? Integer.parseInt(clientId) : 9)
                         .setAppUuid("uuid"));
     }
 
