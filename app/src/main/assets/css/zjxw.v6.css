@@ -1,0 +1,98 @@
+﻿html,body{padding:0;margin:0;}
+body{}
+div,p{padding: 0;margin:0;word-wrap: break-word;word-break: normal;}
+a{-webkit-tap-highlight-color: rgba(0,0,0,0.1);-webkit-user-select:none;-webkit-touch-callout:none;color: #000;text-decoration: none;font-weight: bold}
+ul,li,ol{list-style: none;padding: 0;margin: 0;}
+/*h1,h2,h3,h4{padding:0;margin:0;font-size:22px;word-wrap:break-word;word-break:break-all;}*/
+img{max-width:100%;height:auto;}
+.header, .bodyer, .footer{}
+.container{max-width: 100%;margin: 0 auto;white-space: normal;word-wrap: break-word;}
+p{ background-color: transparent; overflow: hidden; display: block;width:100%;padding:8px 0!important; box-sizing:border-box;font-size:18px;text-align:justify; line-height: 28px;}
+p a{color:#2B72C1}
+p strong{display:inline!important;}
+/* iframe{max-width:100%!important;border:none!important;background:#000000!important;width:100%!important; height:auto!important; margin:0!important; padding:0!important; overflow:hidden!important;} */
+iframe{max-width:100%;border:none;background:#000000;width:100%; margin:0; padding:0; overflow:hidden;}
+
+video{max-width:100%!important;width:100%;border-style:none;background-color:#000000;}
+.top-video-play-cover{width:100%;height:100%;position:absolute;z-index:65211!important;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjc1MzJEMjQ0ODQ3RTExRTZCRDQ3OUEzMTZDN0E5QzgwIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjc1MzJEMjQ1ODQ3RTExRTZCRDQ3OUEzMTZDN0E5QzgwIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NzUzMkQyNDI4NDdFMTFFNkJENDc5QTMxNkM3QTlDODAiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NzUzMkQyNDM4NDdFMTFFNkJENDc5QTMxNkM3QTlDODAiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7wZGdgAAAHJUlEQVR42uydXUxTZxjH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);background-position:center center;background-repeat:no-repeat;background-color:clear;left:0;top:0;}
+
+/* article.section figure.normal-pic{padding:.3px .22rem!important;box-sizing:border-box!important; text-align: center!important;} */
+/* article.section .normal-pic{padding:0!important;} */
+
+/* 组件新样式 */
+.wg{overflow: hidden;width:100%; padding: 0 0; box-sizing:border-box;}
+blockquote{margin:0;padding:0;}
+
+.wgQuote{margin:0;font-size: 16px;line-height:24px;text-align: justify; color:#666;margin-bottom: 20px}
+figure{margin:0;}
+.wgImage .wgImage-source{padding:0;max-width:100%; display: block; margin:0; text-align: center; line-height:0;margn:0 auto;}
+.wgImage .wgImage-content{padding:12px 0 0 15px 0;font-size:16px;margin:0;color:#AFAFAF;text-align:justify; line-height:24px;border-bottom:3px #EDEDED solid;border-top:none;}
+.wgVideo{text-align:center;}
+.wgVideo iframe{border:0;width:100%;min-height:100px;}
+
+img.zjxw-widget-vote{margin:0 auto; display: none}
+
+.act-btn{display:block;height:45px;line-height: 45px;margin:0 auto;font-size:18px; border-radius: 3px; text-align: center;}
+.btn-wait{background-color:lightskyblue;color: white !important;}
+.btn-sign{background-color:orange;color: white !important;}
+.btn-full{background-color:indianred;color: white !important;}
+.btn-cancel{background-color:seagreen;color: white !important;}
+.btn-closed{background-color:#acacac;color: white !important;}
+.btn-red{background-color:#D3201A;color: white !important;}
+.btn-gray{background-color:#acacac;color: white !important;}
+
+
+
+/* 媒体查询 */
+
+/* 兼容iphone6plus、iphone7plus、iphone8plus*/
+@media (device-height:736px) and (-webkit-min-device-pixel-ratio:2){
+
+
+
+}
+/*iphoneX、iphoneXs*/
+/*即: 设备屏幕可见宽度为375px， 可见高度为812px及设备像素比为3*/
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+
+}
+
+
+/*iphone Xs Max*/
+@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio:3) {
+
+}
+
+/*iphone XR*/
+@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio:2) {
+
+}
+
+
+@media (-webkit-min-device-pixel-ratio:1.1),(-webkit-min-device-pixel-ratio:1.09375),(min-resolution:105dpi),(min-resolution:1.1dppx) {
+
+
+}
+@media (-webkit-min-device-pixel-ratio:1.5),(min-device-pixel-ratio:1.5) {
+
+}
+@media (-webkit-min-device-pixel-ratio:2),(min-device-pixel-ratio:2) {
+
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio:2) {
+
+}
+@media only screen and (-webkit-min-device-pixel-ratio:3) {
+
+}
+
+
+@media (min-resolution:2dppx) {
+
+}
+@media (min-resolution:3dppx) {
+
+}	
+
+
