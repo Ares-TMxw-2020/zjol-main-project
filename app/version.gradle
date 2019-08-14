@@ -80,7 +80,7 @@ configurations.all {
         force 'cn.com.zjol:video:0.0.1-SNAPSHOT'
         force 'cn.com.zjol:push:0.0.1.1-SNAPSHOT'
         force 'cn.com.zjol:player:0.0.1.3'
-        force 'cn.com.zjol:detail:0.0.2'
+        force 'cn.com.zjol:detail:0.0.2.1-SNAPSHOT'
     }
 }
 

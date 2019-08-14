@@ -1,0 +1,21 @@
+/*div,section,ul,li,*/a,/*h1,h2,h3,p,link,textarea,form,select,input,span,button,em,menu,aside,table,tr,td,nav,img,dl,dt,dd, */html, body/*,strong*/{
+    background:#ffffff ;color:#3b424c;
+    border-color:#aaaaaa;
+    scrollbar-arrow-color:#333333;
+    scrollbar-base-color:#dddddd;
+    scrollbar-shadow-color:#dddddd;
+    scrollbar-face-color:#dddddd;
+    scrollbar-highlight-color:#dddddd;
+    scrollbar-dark-shadow-color:#dddddd;
+    scrollbar-3d-light-color:#dddddd;
+    scrollbar-track-color:#dddddd;}
+strong{display:block;}
+a,a *{color:#3b424c;text-decoration:none;}a:visited,a:visited *,a:active,a:active *{color:#aaaaaa;}
+a:hover,a:hover *{color:#3b424c;
+    background:#ffffff;}
+input,select,option,button,textarea{color:#3b424c;
+    background:#ffffff;
+    border:#aaaaaa;
+    border-color: #3b424c #3b424c #3b424c #3b424c;}
+input:focus,select:focus,option:focus,button:focus,textarea:focus,input:hover,input[type=button],input[type=submit],input[type=reset],input[type=image] {border-color: #3b424c #3b424c #3b424c #3b424c;}
+input[type=button]:focus,input[type=submit]:focus,input[type=reset]:focus,input[type=image]:focus,input[type=button]:hover,input[type=submit]:hover,input[type=reset]:hover,input[type=image]:hover {color:#3b424c;background:#ffffff; border-color: #3b424c #3b424c #3b424c #3b424c;}

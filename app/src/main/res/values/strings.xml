@@ -2,13 +2,13 @@
     <string name="app_name">浙江在线</string>
 
     <!--manifest中默认开发环境host-->
-    <string name="data_host_dev">10.105.2.58:8085</string>
+    <string name="data_host_dev">10.100.62.206</string>
 
     <!--debug包点击"关于"中的LOGO切换环境时所用的配置-->
     <string name="env_dev">10.105.2.58:8085</string>
-    <string name="env_test">apibeta.8531.cn</string>
-    <string name="env_beta">apiprev.8531.cn</string>
-    <string name="env_online">api-new.8531.cn</string>
+    <string name="env_test">apibeta.zjol.com.cn</string>
+    <string name="env_beta">apiprev.zjol.com.cn</string>
+    <string name="env_online">api-new.zjol.com.cn</string>
 
     <string name="default_host">@string/data_host</string>
     <string name="default_scheme">@string/data_scheme</string>
