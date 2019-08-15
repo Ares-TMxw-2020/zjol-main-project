@@ -14,9 +14,9 @@ android {
         multiDexEnabled true
 
         manifestPlaceholders = [
-                GETUI_APP_ID    : "b31poVAPhj6n85jPUP2Yf",
-                GETUI_APP_KEY   : "j5qQbBBWHmAxzxO8xD0yx3",
-                GETUI_APP_SECRET: "B51LUkWJf59bpfYib0CiU2",
+                GETUI_APP_ID    : "2MVOsU8WYe83jWIfdja4x4",
+                GETUI_APP_KEY   : "yJ717iAQz48GKqT8YvYMIA",
+                GETUI_APP_SECRET: "xX4QK0AJrLAQFjfcKlkjNA",
                 // 个推 - 小米辅助推送
                 XIAOMI_APP_ID   : "",
                 XIAOMI_APP_KEY  : "",

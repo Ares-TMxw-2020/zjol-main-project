@@ -52,8 +52,8 @@ ext.readKeys = { buildType ->
     buildType.resValue "string", "env_scheme_default", scheme
     buildType.resValue("string", "BUGLY_APPID", properties.getProperty("BUGLY_APPID"))
     buildType.manifestPlaceholders = [
-            GETUI_APP_ID : properties.getProperty("GETUI_APP_ID"),
-            GETUI_APP_SECRET : properties.getProperty("GETUI_APP_SECRET"),
-            GETUI_APP_KEY : properties.getProperty("GETUI_APP_KEY")
+            GETUI_APP_ID    : properties.getProperty("GETUI_APP_ID"),
+            GETUI_APP_SECRET: properties.getProperty("GETUI_APP_SECRET"),
+            GETUI_APP_KEY   : properties.getProperty("GETUI_APP_KEY")
     ]
 }
