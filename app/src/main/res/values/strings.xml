@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">浙江在线</string>
+    <string name="app_name">天目</string>
 
     <!--manifest中默认开发环境host-->
     <string name="data_host_dev">10.100.62.206</string>
