@@ -305,4 +305,8 @@ dependencies {
         changing true
     }
 
+    implementation('cn.com.zjol:service:0.0.1.4') {
+        transitive false
+        changing true
+    }
 }
