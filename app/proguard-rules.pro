@@ -165,6 +165,7 @@
 -keep class com.zjrb.daily.db.bean.** { *; }
 -keepnames class com.zjrb.daily.db.bean.** { *; }
 ### 新闻
+-keep public class zjol.com.cn.news.home.bean.**{*;}
 -keep class com.zjrb.daily.news.bean.** { *; }
 -keepnames class com.zjrb.daily.news.bean.** { *; }
 ### 本地
@@ -174,6 +175,7 @@
 -keep class com.zjrb.daily.find.bean.** { *; }
 -keepnames class com.zjrb.daily.find.bean.** { *; }
 ### 视频
+-keep public class zjol.com.cn.player.bean.**{*;}
 -keep class com.zjrb.daily.video.bean.** { *; }
 -keepnames class com.zjrb.daily.video.bean.** { *; }
 ### 推送
@@ -181,6 +183,8 @@
 -keepnames class com.zjrb.daily.push.bean.** { *; }
 ### 详情
 -keep class com.zjrb.zjxw.detail.request.bean.**{*;}
+### 启动
+-keep public class zjol.com.cn.launcher.bean.**{*;}
 
 ###JSSDK
 -keep class bean.**{*;}
