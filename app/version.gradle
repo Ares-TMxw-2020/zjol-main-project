@@ -79,7 +79,10 @@ configurations.all {
         force 'cn.daily.android:router:0.0.3'
         force 'cn.daily.android:bottom-navigation-view:0.0.1'
 
-        //浙江在线模块依赖
+        force 'cn.daily.android:location:6.0.0.1'
+
+
+            //浙江在线模块依赖
         force 'cn.com.zjol:launcher:0.0.1.13'
         force 'cn.com.zjol:news:0.0.1.17'
         force 'cn.com.zjol:me:0.0.1.8'
@@ -255,6 +258,11 @@ dependencies {
         changing true
     }
     implementation('cn.daily.android:common-webview:1.0.0.31') {
+        transitive false
+        changing = true
+    }
+
+    implementation('cn.daily.android:location:6.0.0.1'){
         transitive false
         changing = true
     }
