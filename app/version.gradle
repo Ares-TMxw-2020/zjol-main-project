@@ -89,7 +89,7 @@ configurations.all {
         force 'cn.com.zjol:biz-core:0.0.1.17.1'
         force 'cn.com.zjol:video:0.0.1-SNAPSHOT'
         force 'cn.com.zjol:push:0.0.1.2-SNAPSHOT'
-        force 'cn.com.zjol:player:0.0.1.10'
+        force 'cn.com.zjol:player:0.0.1.11'
         force 'cn.com.zjol:detail:0.0.2.1-SNAPSHOT'
         force 'cn.com.zjol:service:0.0.1.4'
     }
