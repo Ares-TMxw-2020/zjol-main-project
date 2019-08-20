@@ -81,12 +81,11 @@ configurations.all {
 
         force 'cn.daily.android:location:6.0.0.1'
 
-
-            //浙江在线模块依赖
+        //浙江在线模块依赖
         force 'cn.com.zjol:launcher:0.0.1.13'
         force 'cn.com.zjol:news:0.0.1.18'
-        force 'cn.com.zjol:me:0.0.1.9'
-        force 'cn.com.zjol:biz-core:0.0.1.17.1'
+        force 'cn.com.zjol:me:0.0.1.10'
+        force 'cn.com.zjol:biz-core:0.0.1.19'
         force 'cn.com.zjol:video:0.0.1-SNAPSHOT'
         force 'cn.com.zjol:push:0.0.1.2-SNAPSHOT'
         force 'cn.com.zjol:player:0.0.1.11'
@@ -262,7 +261,7 @@ dependencies {
         changing = true
     }
 
-    implementation('cn.daily.android:location:6.0.0.1'){
+    implementation('cn.daily.android:location:6.0.0.1') {
         transitive false
         changing = true
     }
