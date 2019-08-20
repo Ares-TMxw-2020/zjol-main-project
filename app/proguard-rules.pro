@@ -124,7 +124,7 @@
 ### core-library
 -keep class com.zjrb.core.domain.base.** { *; }
 -keepnames class com.zjrb.core.domain.base.** { *; }
--keep public class * extends com.zjrb.core.domain.base.BaseData{*;}
+-keep public class * extends cn.com.zjol.biz.core.model.BaseData{*;}
 -keep class com.zjrb.core.common.biz.**{*;}
 -keep class com.zjrb.core.ui.widget.**{*;}
 
@@ -180,7 +180,7 @@
 -keep class com.zjrb.daily.push.bean.** { *; }
 -keepnames class com.zjrb.daily.push.bean.** { *; }
 ### 详情
--keep class com.zjrb.zjxw.detailproject.apibean.bean.**{*;}
+-keep class com.zjrb.zjxw.detail.request.bean.**{*;}
 
 ###JSSDK
 -keep class bean.**{*;}
@@ -191,39 +191,6 @@
 -keepnames class com.google.gson.** { *; }
 
 
-### 订阅
--keep class com.daily.news.subscription.more.column.ColumnResponse { *; }
--keepclassmembers class com.daily.news.subscription.more.column.ColumnResponse { *; }
--keepnames class com.daily.news.subscription.more.column.ColumnResponse { *; }
--keepclassmembernames class com.daily.news.subscription.more.column.ColumnResponse { *; }
--keep class com.daily.news.subscription.more.column.ColumnResponse$* { *; }
--keepclassmembers class com.daily.news.subscription.more.column.ColumnResponse$* { *; }
--keepnames class com.daily.news.subscription.more.column.ColumnResponse$* { *; }
--keepclassmembernames class com.daily.news.subscription.more.column.ColumnResponse$* { *; }
-
-
--keep class com.daily.news.subscription.more.search.SearchResponse { *; }
--keepclassmembers class com.daily.news.subscription.more.search.SearchResponse { *; }
--keepnames class com.daily.news.subscription.more.search.SearchResponse{ *; }
--keepclassmembernames class com.daily.news.subscription.more.search.SearchResponse { *; }
--keep class com.daily.news.subscription.more.search.SearchResponse$* { *; }
--keepclassmembers class com.daily.news.subscription.more.search.SearchResponse$* { *; }
--keepnames class com.daily.news.subscription.more.search.SearchResponse$* { *; }
--keepclassmembernames class com.daily.news.subscription.more.search.SearchResponse$* { *; }
-
-
--keep class com.daily.news.subscription.more.category.CategoryResponse$* { *; }
--keepclassmembers class com.daily.news.subscription.more.category.CategoryResponse$* { *; }
--keepnames class com.daily.news.subscription.more.category.CategoryResponse$* { *; }
--keepclassmembernames class com.daily.news.subscription.more.category.CategoryResponse$* { *; }
--keep class com.daily.news.subscription.detail.DetailResponse$* { *; }
--keepclassmembers class com.daily.news.subscription.detail.DetailResponse$* { *; }
--keepnames class com.daily.news.subscription.detail.DetailResponse$* { *; }
--keepclassmembernames class com.daily.news.subscription.detail.DetailResponse$* { *; }
--keep class com.daily.news.subscription.article.ArticleResponse$* { *; }
--keepclassmembers class com.daily.news.subscription.article.ArticleResponse$* { *; }
--keepnames class com.daily.news.subscription.article.ArticleResponse$* { *; }
--keepclassmembernames class com.daily.news.subscription.article.ArticleResponse$* { *; }
 ### 首页
 -keep class com.daily.news.launcher.title.TitleResponse$* { *; }
 -keepclassmembers class com.daily.news.launcher.title.TitleResponse$* { *; }
