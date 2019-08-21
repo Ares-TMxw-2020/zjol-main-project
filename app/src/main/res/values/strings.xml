@@ -3,6 +3,10 @@
 
     <!--manifest中默认开发环境host-->
     <string name="data_host_dev">10.105.2.58</string>
+    <string name="data_host_pre">apiprev.zjol.com.cn</string>
+    <string name="data_host_real">api-new.zjol.com.cn</string>
+    <string name="data_host_test">apibeta.zjol.com.cn</string>
+    <string name="data_host_zj">zj.8531.cn</string>
 
     <!--debug包点击"关于"中的LOGO切换环境时所用的配置-->
     <string name="env_dev">10.105.2.58:8085</string>
