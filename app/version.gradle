@@ -10,7 +10,6 @@ configurations.all {
         force 'com.android.support.constraint:constraint-layout:1.1.3'
         force 'com.android.support:multidex:1.0.3'
 
-
         //第三方依赖
         force 'com.google.android:flexbox:0.3.0'
         force 'com.google.code.gson:gson:2.8.0'
@@ -79,18 +78,16 @@ configurations.all {
         force 'cn.daily.android:router:0.0.3'
         force 'cn.daily.android:bottom-navigation-view:0.0.1'
 
-        force 'cn.daily.android:location:6.0.0.1'
-
         //浙江在线模块依赖
         force 'cn.com.zjol:launcher:0.0.1.14-SNAPSHOT'
-        force 'cn.com.zjol:news:0.0.1.18'
+        force 'cn.com.zjol:news:0.0.1.19'
         force 'cn.com.zjol:me:0.0.1.11'
-        force 'cn.com.zjol:biz-core:0.0.1.19'
+        force 'cn.com.zjol:biz-core:0.0.1.20'
         force 'cn.com.zjol:push:0.0.1.2-SNAPSHOT'
         force 'cn.com.zjol:player:0.0.1.11'
         force 'cn.com.zjol:detail:0.0.2.1-SNAPSHOT'
         force 'cn.com.zjol:service:0.0.1.4'
-        force 'cn.com.zjol:video_recorder:0.0.6-SNAPSHOT'
+        force 'cn.com.zjol:video_recorder:0.0.7-SNAPSHOT'
     }
 }
 
@@ -261,12 +258,6 @@ dependencies {
         transitive false
         changing = true
     }
-
-    implementation('cn.daily.android:location:6.0.0.1') {
-        transitive false
-        changing = true
-    }
-
 
     //浙江在线模块依赖
     implementation('cn.com.zjol:launcher:0.0.1-SNAPSHOT') {
