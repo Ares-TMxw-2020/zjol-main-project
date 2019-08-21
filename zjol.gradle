@@ -9,13 +9,19 @@ ext {
         appVersionCode = Integer.parseInt(properties.getProperty("appVersionCode"))
         appVersionName = properties.getProperty('appVersionName')
         env = properties.getProperty('env')
+        passport = properties.getProperty('passport')
+        String[] params = passport.split("#")
+        if (params.length != 2) {
+            throw new IllegalArgumentException("打包参数错误,请检测服务器地址和ClientID是否配置")
+        }
         scheme = "http"
         isDebug = Boolean.parseBoolean(properties.getProperty("isDebug"))
     } else {
         appVersionCode = 10000
         appVersionName = "1.0.0"
-        env = "10.105.2.58:8085"
-        scheme = "http"
+        passport = "https://passport-test.8531.cn#21"
+        env = "apibeta.zjol.com.cn"
+        scheme = "https"
         isDebug = true
     }
 
@@ -50,6 +56,7 @@ ext.readKeys = { buildType ->
 
     buildType.resValue "string", "env_host_default", env
     buildType.resValue "string", "env_scheme_default", scheme
+    buildType.resValue "string", "passport_default", passport
     buildType.resValue("string", "BUGLY_APPID", properties.getProperty("BUGLY_APPID"))
     buildType.manifestPlaceholders = [
             GETUI_APP_ID    : properties.getProperty("GETUI_APP_ID"),
