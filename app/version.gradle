@@ -82,7 +82,7 @@ configurations.all {
         force 'cn.daily.android:location:6.0.0.1'
 
         //浙江在线模块依赖
-        force 'cn.com.zjol:launcher:0.0.1.13-SNAPSHOT'
+        force 'cn.com.zjol:launcher:0.0.1.14-SNAPSHOT'
         force 'cn.com.zjol:news:0.0.1.18'
         force 'cn.com.zjol:me:0.0.1.10'
         force 'cn.com.zjol:biz-core:0.0.1.19'
