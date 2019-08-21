@@ -31,6 +31,7 @@ import cn.com.zjol.biz.core.network.DailyNetworkManager;
 import cn.com.zjol.push.Push;
 import cn.daily.news.analytics.AnalyticsManager;
 import cn.daily.news.update.UpdateManager;
+import zjol.com.cn.news.location.OnLineLocationManager;
 
 public class ZjolApplication extends MultiDexApplication {
 
@@ -46,6 +47,7 @@ public class ZjolApplication extends MultiDexApplication {
         UpdateManager.init(this);
         isMainProcess = TextUtils.equals(getPackageName(), getCurProcessName());
         if (isMainProcess) {
+            OnLineLocationManager.getInstance().locationWithIpAndGps();
             initUmengLogin(UIUtils.getApp(), channel);
             initPassport(UIUtils.isDebuggable());
             initAnalytic();
