@@ -88,6 +88,8 @@ configurations.all {
         force 'cn.com.zjol:detail:0.0.2.1-SNAPSHOT'
         force 'cn.com.zjol:service:0.0.1.4'
         force 'cn.com.zjol:video_recorder:0.0.7-SNAPSHOT'
+        force 'cn.com.zjol:search:0.0.1.1-SNAPSHOT'
+
     }
 }
 
@@ -296,6 +298,10 @@ dependencies {
     }
 
     implementation('cn.com.zjol:service:0.0.1.4') {
+        transitive false
+        changing true
+    }
+    implementation('cn.com.zjol:search:0.0.1.1-SNAPSHOT') {
         transitive false
         changing true
     }
