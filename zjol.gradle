@@ -14,7 +14,7 @@ ext {
         if (params.length != 2) {
             throw new IllegalArgumentException("打包参数错误,请检测服务器地址和ClientID是否配置")
         }
-        scheme = "http"
+        scheme = "https"
         isDebug = Boolean.parseBoolean(properties.getProperty("isDebug"))
     } else {
         appVersionCode = 10000
