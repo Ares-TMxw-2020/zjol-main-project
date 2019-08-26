@@ -25,4 +25,8 @@
     <string name="passport_online">https://passport.8531.cn#9</string>
 
     <string name="text_test_channel">测试渠道</string>
+
+    <!--通知渠道信息-->
+    <string name="notification_channel_id">channel_id_tianmu</string>
+    <string name="notification_channel_name">@string/app_name</string>
 </resources>
