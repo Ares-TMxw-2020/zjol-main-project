@@ -31,6 +31,7 @@ import cn.com.zjol.biz.core.network.DailyNetworkManager;
 import cn.com.zjol.push.Push;
 import cn.daily.news.analytics.AnalyticsManager;
 import cn.daily.news.update.UpdateManager;
+import zjol.com.cn.news.location.OnLineLocationManager;
 
 public class ZjolApplication extends MultiDexApplication {
 
@@ -46,6 +47,7 @@ public class ZjolApplication extends MultiDexApplication {
         UpdateManager.init(this);
         isMainProcess = TextUtils.equals(getPackageName(), getCurProcessName());
         if (isMainProcess) {
+            OnLineLocationManager.getInstance().locationWithIpAndGps();
             initUmengLogin(UIUtils.getApp(), channel);
             initPassport(UIUtils.isDebuggable());
             initAnalytic();
@@ -150,14 +152,14 @@ public class ZjolApplication extends MultiDexApplication {
      * 友盟第三方登录
      */
     private void initUmengLogin(Context context, String channel) {
-        UMConfigure.init(context, "535879d256240b8965030920", channel, UMConfigure.DEVICE_TYPE_PHONE, "");
+        UMConfigure.init(context, "5d5664b53fc19587cb000f83", channel, UMConfigure.DEVICE_TYPE_PHONE, "");
         UMShareConfig config = new UMShareConfig();
         config.isNeedAuthOnGetUserInfo(true);
         UMShareAPI.get(context).setShareConfig(config);
         PlatformConfig.setWeixin("wxc8bcb96e972bd147", "6bde68292c1295c7cf81d47a3a520030");
         PlatformConfig.setSinaWeibo("287017146", "5113d5e528ae8335f230f025bcbd6fa1", "http://www.zjol.com.cn");
-        PlatformConfig.setQQZone("101096646", "da6306af99c94ba949029b563a69a9a4");
-        PlatformConfig.setDing("dingoahuzuxhqyb2jtypgm");
+        PlatformConfig.setQQZone("1109683115", "1tXO7AiuhY17wReo");
+        PlatformConfig.setDing("dingkcmyq1dhfhjdgl0b");
     }
 
     /**
