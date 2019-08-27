@@ -116,8 +116,8 @@ public class ZjolApplication extends MultiDexApplication {
 
         boolean isDebug = UIUtils.isDebuggable();
 
-        String appKey = isDebug ? "j4nifulb_0q7qbo9p5gb2r" : "iv7hxxyz_10458cy76zmyd";
-        long mpID = isDebug ? 28 : 22;
+        String appKey = isDebug ? "jzcif5f3_07rbh5dzvuuk9" : "jzcid4st_04o7ebuj3yhqv";
+        long mpID = isDebug ? 102 : 100;
         String statisticsURL = isDebug ? "https://ta.8531.cn/c" : "https://ta.8531.cn/c";
 
         AnalyticsManager.TAConfig taConfig = new AnalyticsManager.TAConfig(appKey, mpID, statisticsURL);
@@ -156,8 +156,8 @@ public class ZjolApplication extends MultiDexApplication {
         UMShareConfig config = new UMShareConfig();
         config.isNeedAuthOnGetUserInfo(true);
         UMShareAPI.get(context).setShareConfig(config);
-        PlatformConfig.setWeixin("wxc8bcb96e972bd147", "6bde68292c1295c7cf81d47a3a520030");
-        PlatformConfig.setSinaWeibo("287017146", "5113d5e528ae8335f230f025bcbd6fa1", "http://www.zjol.com.cn");
+        PlatformConfig.setWeixin("wx6979efeb905e22f3", "b483df3317162dab6fb0b17aac581026");
+        PlatformConfig.setSinaWeibo("3028984400", "cbb5c547f3f1b53fd36a4f2c818df769", "http://www.zjol.com.cn");
         PlatformConfig.setQQZone("1109683115", "1tXO7AiuhY17wReo");
         PlatformConfig.setDing("dingkcmyq1dhfhjdgl0b");
     }
