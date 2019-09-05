@@ -1,9 +1,9 @@
 function imageBrowse(jsObject,index) {
-    zjxw.imageBrowse(index);
+    tmxw.imageBrowse(index);
 }
 
 function imageABrowse(jsObject,index) {
-    zjxw.imageABrowse(index);
+    tmxw.imageABrowse(index);
 }
 
 function applyNightTheme() {
