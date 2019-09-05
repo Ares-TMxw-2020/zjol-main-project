@@ -30,6 +30,7 @@ import cn.com.zjol.biz.core.network.DailyNetworkManager;
 import cn.com.zjol.push.Push;
 import cn.daily.news.analytics.AnalyticsManager;
 import cn.daily.news.update.UpdateManager;
+import zjol.com.cn.news.common.callback.OnCityLocationedCallBack;
 import zjol.com.cn.news.location.OnLineLocationManager;
 
 public class ZjolApplication extends MultiDexApplication {
@@ -57,7 +58,7 @@ public class ZjolApplication extends MultiDexApplication {
 
             UpdateManager.init(this);
 
-            OnLineLocationManager.getInstance().locationWithIpAndGps();
+            OnLineLocationManager.getInstance().locationUseGpsThenIp(null);
 
             initUmeng(this, mChannel);
             initPassport(debuggable);
