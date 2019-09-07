@@ -446,8 +446,9 @@ public static java.lang.String TABLENAME;
    *;
 }
 
--keepnames class * implements android.os.Parcelable {
-    public static final ** CREATOR;
+### 保持 Parcelable 不被混淆
+-keep class * implements android.os.Parcelable {
+    public static final android.os.Parcelable$Creator *;
 }
 
 -keep class com.linkedin.** { *; }
@@ -455,7 +456,6 @@ public static java.lang.String TABLENAME;
 -keepattributes Signature
 
 ### 友盟统计
-
 -keepclassmembers class * {
   public <init> (org.json.JSONObject);
 }
