@@ -88,8 +88,8 @@ configurations.all {
         force 'cn.com.zjol:detail:0.0.2.1.15'
         force 'cn.com.zjol:service:0.0.1.8'
         force 'cn.com.zjol:video_recorder:0.0.9'
-        force 'cn.com.zjol:search:0.0.1-SNAPSHOT'
-        force 'cn.com.zjol:scanner:0.0.1.2'
+        force 'cn.com.zjol:search:0.0.1.2'
+        force 'cn.com.zjol:scanner:0.0.1-SNAPSHOT'
         force 'cn.com.zjol:userhome:0.0.0.10'
     }
 }
