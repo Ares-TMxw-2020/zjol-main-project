@@ -72,7 +72,7 @@ configurations.all {
         force 'cn.daily.android:analytics:6.1.0.3'
         force 'cn.daily.android:passport:0.0.1'
 
-        force 'cn.daily.android:common-core:0.0.6.57'
+        force 'cn.daily.android:common-core:0.0.6.58'
         force 'com.aliya:android-uimode:2.2.1'
         force 'cn.core.android:core-glide:1.0.0'
         force 'cn.daily.android:router:0.0.3'
@@ -85,7 +85,7 @@ configurations.all {
         force 'cn.com.zjol:biz-core:0.0.1.55'
         force 'cn.com.zjol:push:0.0.1.6'
         force 'cn.com.zjol:player:0.0.1.65'
-        force 'cn.com.zjol:detail:0.0.2.1.18'
+        force 'cn.com.zjol:detail:0.0.2.1.20'
         force 'cn.com.zjol:service:0.0.1.8'
         force 'cn.com.zjol:video_recorder:0.0.9'
         force 'cn.com.zjol:search:0.0.1.2'
