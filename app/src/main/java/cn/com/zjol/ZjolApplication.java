@@ -14,6 +14,7 @@ import com.umeng.commonsdk.UMConfigure;
 import com.umeng.socialize.PlatformConfig;
 import com.umeng.socialize.UMShareAPI;
 import com.umeng.socialize.UMShareConfig;
+import com.zjol.video.UGC;
 import com.zjrb.core.utils.AppUtils;
 import com.zjrb.core.utils.UIUtils;
 import com.zjrb.daily.db.DatabaseLoader;
@@ -30,7 +31,6 @@ import cn.com.zjol.biz.core.network.DailyNetworkManager;
 import cn.com.zjol.push.Push;
 import cn.daily.news.analytics.AnalyticsManager;
 import cn.daily.news.update.UpdateManager;
-import zjol.com.cn.news.common.callback.OnCityLocationedCallBack;
 import zjol.com.cn.news.location.OnLineLocationManager;
 
 public class ZjolApplication extends MultiDexApplication {
@@ -38,6 +38,9 @@ public class ZjolApplication extends MultiDexApplication {
     private Application mApp;
     private boolean debuggable;
     private String mChannel;
+
+    String ugcLicenceUrl = "http://license.vod2.myqcloud.com/license/v1/f0f7893e23b81fb92c3045690d599d09/TXUgcSDK.licence";
+    String ugcKey = "b12da8f7f658e110ddcfd9d7f2c33303";
 
     @Override
     public void onCreate() {
@@ -59,6 +62,8 @@ public class ZjolApplication extends MultiDexApplication {
             UpdateManager.init(this);
 
             OnLineLocationManager.getInstance().locationUseGpsThenIp(null);
+
+            UGC.init(this, ugcLicenceUrl, ugcKey); // 腾讯小视频初始化
 
             initUmeng(this, mChannel);
             initPassport(debuggable);
