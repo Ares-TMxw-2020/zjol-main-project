@@ -119,14 +119,14 @@ public class ZjolApplication extends MultiDexApplication {
         if (UserBiz.get() != null && UserBiz.get().isLoginUser()) {
             saConfig.setAccountId(UserBiz.get().getAccountID());
         }
-        saConfig.setLogEnable(isDebug);
-        saConfig.setAutoTrack(true);
+        saConfig.setLogEnable(false);
+        saConfig.setAutoTrack(false);
 
         String logService = "dot.wts.xinwen.cn";
         AnalyticsManager.SHWConfig shwConfig = new AnalyticsManager.SHWConfig("", "", logService);
-        shwConfig.setImmediateReport(true);
-        shwConfig.setLogEnable(true);
-        shwConfig.setEnable(true);
+        shwConfig.setImmediateReport(false);
+        shwConfig.setLogEnable(false);
+        shwConfig.setEnable(false);
         if (UserBiz.get() != null && UserBiz.get().isLoginUser()) {
             shwConfig.setAccountId(UserBiz.get().getAccountID());
         }
