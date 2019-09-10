@@ -87,8 +87,9 @@ configurations.all {
         force 'cn.com.zjol:player:0.0.1.75'
         force 'cn.com.zjol:detail:0.0.2.1.20'
         force 'cn.com.zjol:service:0.0.1.8'
-        force 'cn.com.zjol:video_recorder:0.0.11'
-        force 'cn.com.zjol:video_recorder:0.0.11'
+        force 'cn.com.zjol:video_recorder:0.0.13'
+        force 'cn.com.zjol:video_editor:0.0.5'
+        force 'cn.com.zjol:video_choose:0.0.5'
         force 'cn.com.zjol:search:0.0.1.2'
         force 'cn.com.zjol:scanner:0.0.1-SNAPSHOT'
         force 'cn.com.zjol:userhome:0.0.0.21'
@@ -144,7 +145,6 @@ dependencies {
     implementation('com.google.android.exoplayer:extension-rtmp:2.9.6') {
         exclude group: 'com.android.support'
     }
-
 
     implementation 'com.umeng.sdk:analytics:7.5.4'
     implementation 'com.umeng.sdk:umeng-common:1.5.4'
