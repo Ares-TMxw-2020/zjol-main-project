@@ -81,7 +81,7 @@ configurations.all {
         //浙江在线模块依赖
         force 'cn.com.zjol:launcher:0.0.1.30'
         force 'cn.com.zjol:news:0.0.1.69'
-        force 'cn.com.zjol:me:0.0.1.67'
+        force 'cn.com.zjol:me:0.0.1.68'
         force 'cn.com.zjol:biz-core:0.0.1.57'
         force 'cn.com.zjol:push:0.0.1.6'
         force 'cn.com.zjol:player:0.0.1.66'
