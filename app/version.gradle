@@ -84,7 +84,7 @@ configurations.all {
         force 'cn.com.zjol:me:0.0.1.72'
         force 'cn.com.zjol:biz-core:0.0.1.62'
         force 'cn.com.zjol:push:0.0.1.7'
-        force 'cn.com.zjol:player:0.0.1.72'
+        force 'cn.com.zjol:player:0.0.1.75'
         force 'cn.com.zjol:detail:0.0.2.1.20'
         force 'cn.com.zjol:service:0.0.1.8'
         force 'cn.com.zjol:video_recorder:0.0.11'
