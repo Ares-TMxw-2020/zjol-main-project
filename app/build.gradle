@@ -30,7 +30,8 @@ android {
         ]
 
         ndk {
-            abiFilters "armeabi", "armeabi-v7a", "x86", "mips"
+            // 腾讯短视频SDK要求：如果使用的是商业版，只能使用 armeabi 架构
+            abiFilters "armeabi"
         }
     }
 
