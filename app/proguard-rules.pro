@@ -447,9 +447,10 @@ public static java.lang.String TABLENAME;
 }
 
 ### 保持 Parcelable 不被混淆
--keep class * implements android.os.Parcelable {
-    public static final android.os.Parcelable$Creator *;
-}
+-keep class * implements android.os.Parcelable {*;}
+-keepnames class * implements  android.os.Parcelable{ *; }
+-keepclassmembers class * implements android.os.Parcelable {*;}
+-keepclassmembernames class * implements android.os.Parcelable { *; }
 
 -keep class com.linkedin.** { *; }
 -keep class com.android.dingtalk.share.ddsharemodule.** { *; }
