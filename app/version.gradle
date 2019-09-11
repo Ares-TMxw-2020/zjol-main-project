@@ -60,7 +60,7 @@ configurations.all {
 
         //内部通用依赖
         force 'cn.daily.android:share:0.0.1'
-        force 'cn.daily.android:common-webview:1.0.0.131'
+        force 'cn.daily.android:common-webview:1.0.0.132'
         force 'com.aliya:ratioview:1.0.0'
         force 'com.aliya:fitwindow:1.0.0'
         force 'com.core:network:0.1.3'
