@@ -125,8 +125,8 @@ dependencies {
     implementation 'org.greenrobot:greendao:3.2.2'
     implementation 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+'
     implementation 'com.netease.mobsec:netmobsecLib:4.2.2.1'
-    implementation 'com.shuwen.analytics:analytics-sdk:1.2.0'
-    implementation 'com.netease.android:insightar:1.4.6'
+//    implementation 'com.shuwen.analytics:analytics-sdk:1.2.0'
+//    implementation 'com.netease.android:insightar:1.4.6'
     implementation 'org.apache.ant:ant:1.7.0'
 
     //播放器依赖
