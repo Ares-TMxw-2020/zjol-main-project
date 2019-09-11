@@ -60,7 +60,7 @@ configurations.all {
 
         //内部通用依赖
         force 'cn.daily.android:share:0.0.1'
-        force 'cn.daily.android:common-webview:1.0.0.130'
+        force 'cn.daily.android:common-webview:1.0.0.131'
         force 'com.aliya:ratioview:1.0.0'
         force 'com.aliya:fitwindow:1.0.0'
         force 'com.core:network:0.1.3'
@@ -79,20 +79,20 @@ configurations.all {
         force 'cn.daily.android:bottom-navigation-view:0.0.1'
 
         //浙江在线模块依赖
-        force 'cn.com.zjol:launcher:0.0.1.32'
-        force 'cn.com.zjol:news:0.0.1.76'
-        force 'cn.com.zjol:me:0.0.1.73'
-        force 'cn.com.zjol:biz-core:0.0.1.63'
+        force 'cn.com.zjol:launcher:0.0.1.33'
+        force 'cn.com.zjol:news:0.0.1.81'
+        force 'cn.com.zjol:me:0.0.1.79'
+        force 'cn.com.zjol:biz-core:0.0.1.66'
         force 'cn.com.zjol:push:0.0.1.7'
         force 'cn.com.zjol:player:0.0.1.77'
         force 'cn.com.zjol:detail:0.0.2.1.21'
-        force 'cn.com.zjol:service:0.0.1.8'
+        force 'cn.com.zjol:service:0.0.1.11'
         force 'cn.com.zjol:video_recorder:0.0.13'
         force 'cn.com.zjol:video_editor:0.0.7'
         force 'cn.com.zjol:video_choose:0.0.5'
-        force 'cn.com.zjol:search:0.0.1.2'
+        force 'cn.com.zjol:search:0.0.1.3'
         force 'cn.com.zjol:scanner:0.0.1-SNAPSHOT'
-        force 'cn.com.zjol:userhome:0.0.0.21'
+        force 'cn.com.zjol:userhome:0.0.0.23'
     }
 }
 
@@ -125,8 +125,8 @@ dependencies {
     implementation 'org.greenrobot:greendao:3.2.2'
     implementation 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+'
     implementation 'com.netease.mobsec:netmobsecLib:4.2.2.1'
-    implementation 'com.shuwen.analytics:analytics-sdk:1.2.0'
-    implementation 'com.netease.android:insightar:1.4.6'
+//    implementation 'com.shuwen.analytics:analytics-sdk:1.2.0'
+//    implementation 'com.netease.android:insightar:1.4.6'
     implementation 'org.apache.ant:ant:1.7.0'
 
     //播放器依赖
