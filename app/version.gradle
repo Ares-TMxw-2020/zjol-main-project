@@ -60,7 +60,7 @@ configurations.all {
 
         //内部通用依赖
         force 'cn.daily.android:share:0.0.1'
-        force 'cn.daily.android:common-webview:1.0.0.131'
+        force 'cn.daily.android:common-webview:1.0.0.132'
         force 'com.aliya:ratioview:1.0.0'
         force 'com.aliya:fitwindow:1.0.0'
         force 'com.core:network:0.1.3'
@@ -82,7 +82,7 @@ configurations.all {
         force 'cn.com.zjol:launcher:0.0.1.33'
         force 'cn.com.zjol:news:0.0.1.83'
         force 'cn.com.zjol:me:0.0.1.79'
-        force 'cn.com.zjol:biz-core:0.0.1.66'
+        force 'cn.com.zjol:biz-core:0.0.1.67'
         force 'cn.com.zjol:push:0.0.1.7'
         force 'cn.com.zjol:player:0.0.1.78'
         force 'cn.com.zjol:detail:0.0.2.1.21'
