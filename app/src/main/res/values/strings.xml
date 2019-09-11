@@ -19,7 +19,7 @@
     <string name="data_scheme">http</string>
     <string name="data_host">www.zjol.com.cn</string>
     <!--通信证环境和对应的CLIENT_ID-->
-    <string name="passport_dev">https://passport-test.8531.cn#21</string>
+    <string name="passport_dev">https://passport-test.8531.cn#25</string>
     <string name="passport_test">https://passport-test.8531.cn#21</string>
     <string name="passport_beta">https://passport-test.8531.cn#24</string>
     <string name="passport_online">https://passport.8531.cn#44</string>
