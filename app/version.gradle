@@ -79,7 +79,7 @@ configurations.all {
         force 'cn.daily.android:bottom-navigation-view:0.0.1'
 
         //浙江在线模块依赖
-        force 'cn.com.zjol:launcher:0.0.1.37'
+        force 'cn.com.zjol:launcher:0.0.1.38'
         force 'cn.com.zjol:news:0.0.1.92'
         force 'cn.com.zjol:me:0.0.1.94'
         force 'cn.com.zjol:biz-core:0.0.1.83'
@@ -91,7 +91,7 @@ configurations.all {
         force 'cn.com.zjol:video_choose:0.0.7'
         force 'cn.com.zjol:search:0.0.1.3'
         force 'cn.com.zjol:scanner:0.0.1-SNAPSHOT'
-        force 'cn.com.zjol:userhome:0.0.0.30'
+        force 'cn.com.zjol:user-home:0.0.0.32'
     }
 }
 
@@ -308,7 +308,7 @@ dependencies {
         transitive false
         changing true
     }
-    implementation('cn.com.zjol:userhome:0.0.0.1') {
+    implementation('cn.com.zjol:user-home:0.0.0.1') {
         transitive false
         changing true
     }
