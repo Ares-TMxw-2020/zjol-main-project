@@ -167,8 +167,7 @@ dependencies {
 
 
     //内部通用依赖
-    implementation 'cn.com.zjol:video_recorder:0.0.11'
-    implementation 'cn.com.zjol:video_editor:0.0.4'
+    implementation 'cn.com.zjol:video_ugc:0.0.1'
     implementation 'cn.com.zjol:video_choose:0.0.4'
 
     implementation('cn.daily.android:share:0.0.1') {
