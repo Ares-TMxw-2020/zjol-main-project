@@ -62,7 +62,6 @@ public class ZjolApplication extends MultiDexApplication {
                 mChannel = "bianfeng";
 
             AppUtils.setChannel(mChannel);
-            loadStartPageData();
 
             UpdateManager.init(this);
 
@@ -90,24 +89,6 @@ public class ZjolApplication extends MultiDexApplication {
                 }
             }).start();
         }
-    }
-
-    /**
-     * 尽早获取视频信息并缓存 以保证第一次打开启动页的时候可以播放视频
-     */
-    private void loadStartPageData() {
-        new StartPageTask(new APIExpandCallBack<AdResponse.DataBean>() {
-            @Override
-            public void onSuccess(AdResponse.DataBean dataBean) {
-                if (dataBean.app_start_page_list != null && dataBean.app_start_page_list.size() > 0) {
-                    int type = dataBean.app_start_page_list.get(0).view_type;
-                    if (type==1){//缓存视频
-                        CacheFactory.getInstance().preloadVideo(dataBean.app_start_page_list.get(0).pic_url);
-                    }
-                }
-            }
-        }).exe();
-
     }
 
     /**
