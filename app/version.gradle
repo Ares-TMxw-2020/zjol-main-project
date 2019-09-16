@@ -81,8 +81,8 @@ configurations.all {
         //浙江在线模块依赖
         force 'cn.com.zjol:launcher:0.0.1.43'
         force 'cn.com.zjol:news:0.0.1.98'
-        force 'cn.com.zjol:me:0.0.1.99'
-        force 'cn.com.zjol:biz-core:0.0.1.86'
+        force 'cn.com.zjol:me:0.0.1.101'
+        force 'cn.com.zjol:biz-core:0.0.1.87'
         force 'cn.com.zjol:push:0.0.1.8'
         force 'cn.com.zjol:player:0.0.1.94'
         force 'cn.com.zjol:detail:0.0.2.1.25'
@@ -91,7 +91,7 @@ configurations.all {
         force 'cn.com.zjol:video_choose:0.0.7'
         force 'cn.com.zjol:search:0.0.1.4'
         force 'cn.com.zjol:scanner:0.0.1.1'
-        force 'cn.com.zjol:user-home:0.0.0.33'
+        force 'cn.com.zjol:user-home:0.0.0.34'
     }
 }
 
