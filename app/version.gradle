@@ -89,7 +89,7 @@ configurations.all {
         force 'cn.com.zjol:service:0.0.1.11'
         force 'cn.com.zjol:video_ugc:0.0.6'
         force 'cn.com.zjol:video_choose:0.0.7'
-        force 'cn.com.zjol:search:0.0.1.3'
+        force 'cn.com.zjol:search:0.0.1.4'
         force 'cn.com.zjol:scanner:0.0.1.1'
         force 'cn.com.zjol:user-home:0.0.0.33'
     }
