@@ -153,7 +153,7 @@ public class ZjolApplication extends MultiDexApplication {
         PlatformConfig.setWeixin("wx6979efeb905e22f3", "b483df3317162dab6fb0b17aac581026");
         PlatformConfig.setSinaWeibo("3028984400", "cbb5c547f3f1b53fd36a4f2c818df769", "http://www.zjol.com.cn");
         PlatformConfig.setQQZone("101781365", "c84c1077680a30601670e741265e1442");
-        PlatformConfig.setDing("dingkcmyq1dhfhjdgl0b");
+        PlatformConfig.setDing("dingoa65puwgwj5n2tpzlf");
     }
 
     /**
