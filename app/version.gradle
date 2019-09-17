@@ -65,7 +65,7 @@ configurations.all {
         force 'com.aliya:fitwindow:1.0.0'
         force 'com.core:network:0.1.3'
         force 'com.aliya:bannerview:2.1.0'
-        force 'com.aliya:permission:0.5.0'
+        force 'com.aliya:permission:0.5.1'
         force 'cn.daily.android:dark-status-bar:1.0.2'
         force 'cn.daily.android:daily-db:6.0.1'
         force 'cn.daily.android:update:6.0.0.4'
