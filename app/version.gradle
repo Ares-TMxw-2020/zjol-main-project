@@ -71,6 +71,7 @@ configurations.all {
         force 'cn.daily.android:update:6.0.0.4'
         force 'cn.daily.android:analytics:6.1.0.3'
         force 'cn.daily.android:passport:0.0.1'
+        force 'cn.daily.android:audiohelper:1.0.4'
 
         force 'cn.daily.android:common-core:0.0.6.58'
         force 'com.aliya:android-uimode:2.2.1'
@@ -87,8 +88,9 @@ configurations.all {
         force 'cn.com.zjol:player:0.0.2.5'
         force 'cn.com.zjol:detail:0.0.2.1.28'
         force 'cn.com.zjol:service:0.0.1.12'
-        force 'cn.com.zjol:video_ugc:0.0.9'
+        force 'cn.com.zjol:video_ugc:0.0.11'
         force 'cn.com.zjol:video_choose:0.0.7'
+        force 'cn.com.zjol:video-music:0.0.0.1'
         force 'cn.com.zjol:search:0.0.1.4'
         force 'cn.com.zjol:scanner:0.0.1.1'
         force 'cn.com.zjol:user-home:0.0.0.40'
@@ -167,8 +169,13 @@ dependencies {
 
 
     //内部通用依赖
-    implementation 'cn.com.zjol:video_ugc:0.0.1'
     implementation 'cn.com.zjol:video_choose:0.0.4'
+    implementation 'cn.com.zjol:video_ugc:0.0.1'
+    implementation 'cn.daily.android:audiohelper:1.0.4'
+    implementation('cn.com.zjol:video-music:0.0.0.1') {
+        transitive false
+        changing true
+    }
 
     implementation('cn.daily.android:share:0.0.1') {
         transitive false
