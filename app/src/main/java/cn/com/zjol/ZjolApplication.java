@@ -28,14 +28,10 @@ import cn.com.zjol.biz.core.db.CompatV4DB;
 import cn.com.zjol.biz.core.db.SettingManager;
 import cn.com.zjol.biz.core.db.ThemeMode;
 import cn.com.zjol.biz.core.network.DailyNetworkManager;
-import cn.com.zjol.biz.core.network.compatible.APIExpandCallBack;
 import cn.com.zjol.push.Push;
 import cn.daily.news.analytics.AnalyticsManager;
 import cn.daily.news.update.UpdateManager;
-import zjol.com.cn.launcher.ad.AdResponse;
-import zjol.com.cn.launcher.task.StartPageTask;
 import zjol.com.cn.news.location.OnLineLocationManager;
-import zjol.com.cn.player.utils.exo.CacheFactory;
 
 public class ZjolApplication extends MultiDexApplication {
 
@@ -54,21 +50,15 @@ public class ZjolApplication extends MultiDexApplication {
         boolean isMainProcess = TextUtils.equals(getPackageName(), AppUtils.getProcessName(Process.myPid()));
         if (isMainProcess) {
             debuggable = UIUtils.isDebuggable();
-
             DailyNetworkManager.init(this);
-
             mChannel = WalleChannelReader.getChannel(this);
-            if (TextUtils.isEmpty(mChannel))
+            if (TextUtils.isEmpty(mChannel)){
                 mChannel = "bianfeng";
-
+            }
             AppUtils.setChannel(mChannel);
-
             UpdateManager.init(this);
-
             OnLineLocationManager.getInstance().locationUseGpsThenIp(null);
-
             UGC.init(this, ugcLicenceUrl, ugcKey); // 腾讯小视频初始化
-
             initUmeng(this, mChannel);
             initPassport(debuggable);
             initAnalytic(debuggable);
