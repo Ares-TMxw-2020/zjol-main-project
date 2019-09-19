@@ -4,7 +4,7 @@
     <!--manifest中默认开发环境host-->
     <string name="data_host_dev">10.105.2.58</string>
     <string name="data_host_pre">apiprev.zjol.com.cn</string>
-    <string name="data_host_real">api-new.zjol.com.cn</string>
+    <string name="data_host_real">app-api.zjol.com.cn</string>
     <string name="data_host_test">apibeta.zjol.com.cn</string>
     <string name="data_host_zj">zj.8531.cn</string>
     <string name="data_host_zjol">apibeta.zjol.com.cn</string>
