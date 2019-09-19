@@ -39,8 +39,12 @@ public class ZjolApplication extends MultiDexApplication {
     private boolean debuggable;
     private String mChannel;
 
-    String ugcLicenceUrl = "http://license.vod2.myqcloud.com/license/v1/f0f7893e23b81fb92c3045690d599d09/TXUgcSDK.licence";
-    String ugcKey = "b12da8f7f658e110ddcfd9d7f2c33303";
+//    String ugcLicenceUrl = "http://license.vod2.myqcloud.com/license/v1/f0f7893e23b81fb92c3045690d599d09/TXUgcSDK.licence";
+//    String ugcKey = "b12da8f7f658e110ddcfd9d7f2c33303";
+
+    // 正式版
+    String ugcLicenceUrl = "http://license.vod2.myqcloud.com/license/v1/5dc9e2376e5650783cb2197bd26661f7/TXUgcSDK.licence";
+    String ugcKey = "98be69985348b84dd20ea564aaa9fb32";
 
     @Override
     public void onCreate() {
