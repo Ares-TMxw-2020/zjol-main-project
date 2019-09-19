@@ -98,7 +98,7 @@ public class ZjolApplication extends MultiDexApplication {
                         .setDebug(isDebug)
                         .setHost(passport)
                         .setAppVersion("1.0")
-                        .setClientId(isDebug ? Integer.parseInt(clientId) : 9)
+                        .setClientId(isDebug ? Integer.parseInt(clientId) : 44)
                         .setAppUuid("uuid"));
     }
 
