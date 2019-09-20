@@ -56,7 +56,7 @@ public class ZjolApplication extends MultiDexApplication {
             debuggable = UIUtils.isDebuggable();
             DailyNetworkManager.init(this);
             mChannel = WalleChannelReader.getChannel(this);
-            if (TextUtils.isEmpty(mChannel)){
+            if (TextUtils.isEmpty(mChannel)) {
                 mChannel = "bianfeng";
             }
             AppUtils.setChannel(mChannel);
@@ -145,7 +145,7 @@ public class ZjolApplication extends MultiDexApplication {
         UMConfigure.init(context, "5d5664b53fc19587cb000f83", channel, UMConfigure.DEVICE_TYPE_PHONE, "");
         UMShareAPI.get(context).setShareConfig(new UMShareConfig().isNeedAuthOnGetUserInfo(true));
         PlatformConfig.setWeixin("wx6979efeb905e22f3", "b483df3317162dab6fb0b17aac581026");
-        PlatformConfig.setSinaWeibo("3028984400", "cbb5c547f3f1b53fd36a4f2c818df769", "http://www.zjol.com.cn");
+        PlatformConfig.setSinaWeibo("1688425623", "7be1dd6d1365a8bc307c253366e3ab5a", "https://www.zjol.com.cn");
         PlatformConfig.setQQZone("101781365", "c84c1077680a30601670e741265e1442");
         PlatformConfig.setDing("dingoa65puwgwj5n2tpzlf");
     }
