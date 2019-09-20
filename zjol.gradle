@@ -14,7 +14,7 @@ ext {
         if (params.length != 2) {
             throw new IllegalArgumentException("打包参数错误,请检测服务器地址和ClientID是否配置")
         }
-        scheme = properties.getProperty('scheme',"https")
+        scheme = properties.getProperty('scheme', "https")
         isDebug = Boolean.parseBoolean(properties.getProperty("isDebug"))
     } else {
         appVersionCode = 10000
@@ -59,8 +59,10 @@ ext.readKeys = { buildType ->
     buildType.resValue "string", "passport_default", passport
     buildType.resValue("string", "BUGLY_APPID", properties.getProperty("BUGLY_APPID"))
     buildType.manifestPlaceholders = [
-            GETUI_APP_ID    : properties.getProperty("GETUI_APP_ID"),
-            GETUI_APP_SECRET: properties.getProperty("GETUI_APP_SECRET"),
-            GETUI_APP_KEY   : properties.getProperty("GETUI_APP_KEY")
+            GETUI_APP_ID      : properties.getProperty("GETUI_APP_ID"),
+            GETUI_APP_SECRET  : properties.getProperty("GETUI_APP_SECRET"),
+            GETUI_APP_KEY     : properties.getProperty("GETUI_APP_KEY"),
+            GI_APPID          : properties.getProperty("GI_APPID"),
+            GT_INSTALL_CHANNEL: properties.getProperty("GT_INSTALL_CHANNEL")
     ]
 }

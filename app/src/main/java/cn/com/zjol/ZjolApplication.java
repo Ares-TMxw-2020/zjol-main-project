@@ -29,6 +29,7 @@ import cn.com.zjol.biz.core.db.SettingManager;
 import cn.com.zjol.biz.core.db.ThemeMode;
 import cn.com.zjol.biz.core.network.DailyNetworkManager;
 import cn.com.zjol.push.Push;
+import cn.com.zjol.push.insight.Insight;
 import cn.daily.news.analytics.AnalyticsManager;
 import cn.daily.news.update.UpdateManager;
 import zjol.com.cn.news.location.OnLineLocationManager;
@@ -78,6 +79,7 @@ public class ZjolApplication extends MultiDexApplication {
                     ReadRecordHelper.initReadIds();
                     GlideMode.setProvincialTraffic(SettingManager.getInstance().isProvincialTraffic());
                     Push.init(mApp);
+                    Insight.init(mApp);
                     //放在所有初始化的最后面，防止其他第三方SDK重写UncaughtExceptionHandler被覆盖
                     initCrashHandler(debuggable);
                 }

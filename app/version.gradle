@@ -55,7 +55,7 @@ configurations.all {
         force 'com.getui:hwp:1.0.5'
         force 'com.getui:mzp:1.0.7'
         // 个推个像
-        force 'com.getui:gisdk:3.1.0'
+        force 'com.getui:gisdk:3.1.9.0'
 
 
         //内部通用依赖
@@ -82,9 +82,9 @@ configurations.all {
         //浙江在线模块依赖
         force 'cn.com.zjol:launcher:0.0.1.46'
         force 'cn.com.zjol:news:0.0.2.24'
-        force 'cn.com.zjol:me:0.0.1.119'
+        force 'cn.com.zjol:me:0.0.1.121'
         force 'cn.com.zjol:biz-core:0.0.1.97'
-        force 'cn.com.zjol:push:0.0.1.8'
+        force 'cn.com.zjol:push:0.0.1.9'
         force 'cn.com.zjol:player:0.0.2.18'
         force 'cn.com.zjol:detail:0.0.2.1.35'
         force 'cn.com.zjol:service:0.0.1.12'
@@ -93,7 +93,7 @@ configurations.all {
         force 'cn.com.zjol:video-music:0.0.0.6'
         force 'cn.com.zjol:search:0.0.1.4'
         force 'cn.com.zjol:scanner:0.0.1.1'
-        force 'cn.com.zjol:user-home:0.0.0.45'
+        force 'cn.com.zjol:user-home:0.0.0.46'
     }
 }
 
@@ -165,7 +165,7 @@ dependencies {
     implementation 'com.getui:hwp:1.0.5'
     implementation 'com.getui:mzp:1.0.7'
     // 个推个像
-    implementation 'com.getui:gisdk:3.1.0'
+    implementation 'com.getui:gisdk:3.1.9.0'
 
 
     //内部通用依赖

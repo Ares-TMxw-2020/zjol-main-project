@@ -14,19 +14,20 @@ android {
         multiDexEnabled true
 
         manifestPlaceholders = [
-                GETUI_APP_ID    : "2MVOsU8WYe83jWIfdja4x4",
-                GETUI_APP_KEY   : "yJ717iAQz48GKqT8YvYMIA",
-                GETUI_APP_SECRET: "xX4QK0AJrLAQFjfcKlkjNA",
+                GETUI_APP_ID      : "2MVOsU8WYe83jWIfdja4x4",
+                GETUI_APP_KEY     : "yJ717iAQz48GKqT8YvYMIA",
+                GETUI_APP_SECRET  : "xX4QK0AJrLAQFjfcKlkjNA",
                 // 个推 - 小米辅助推送
-                XIAOMI_APP_ID   : "",
-                XIAOMI_APP_KEY  : "",
+                XIAOMI_APP_ID     : "",
+                XIAOMI_APP_KEY    : "",
                 // 个推 - 华为辅助推送
-                HUAWEI_APP_ID   : "",
+                HUAWEI_APP_ID     : "",
                 // 个推 - 魅族辅助推送
-                MEIZU_APP_ID    : "",
-                MEIZU_APP_KEY   : "",
-                //个象id
-                INSIGHT_ID      : ""
+                MEIZU_APP_ID      : "",
+                MEIZU_APP_KEY     : "",
+                // 个像
+                GI_APPID          : 'WHHHJTGQWV5hdguFTsNUS1',
+                GT_INSTALL_CHANNEL: ""
         ]
 
         ndk {
