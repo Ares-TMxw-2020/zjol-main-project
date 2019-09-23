@@ -18,8 +18,8 @@
 
     <string name="default_host">@string/data_host</string>
     <string name="default_scheme">@string/data_scheme</string>
-    <string name="data_scheme">http</string>
-    <string name="data_host">www.zjol.com.cn</string>
+    <string name="data_scheme">https</string>
+    <string name="data_host">app-api.zjol.com.cn</string>
     <!--通信证环境和对应的CLIENT_ID-->
     <string name="passport_dev">https://passport-test.8531.cn#25</string>
     <string name="passport_test">https://passport-test.8531.cn#21</string>
@@ -31,4 +31,27 @@
     <!--通知渠道信息-->
     <string name="notification_channel_id">channel_id_tianmu</string>
     <string name="notification_channel_name">@string/app_name</string>
+
+    <!-- biz-core LinkControl 内部地址判断 -->
+    <string-array name="inner_host">
+        <item>apibeta.zjol.com.cn</item>
+        <item>apiprev.zjol.com.cn</item>
+        <item>app-api.zjol.com.cn</item>
+        <item>10.105.2.58</item>
+    </string-array>
+    <string-array name="inner_path">
+        <item>/news.html</item>
+        <item>/link.html</item>
+        <item>/subject.html</item>
+        <item>/video.html</item>
+        <item>/detail/video.html</item>
+        <item>/live.html</item>
+        <item>/native</item>
+        <item>/short_video.html</item>
+        <item>/native/user_page.html</item>
+        <item>/personalcard.html</item>
+        <item>/agreement.html</item>
+        <item>/copyright.html</item>
+        <item>/license.html</item>
+    </string-array>
 </resources>
