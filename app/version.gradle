@@ -16,7 +16,7 @@ configurations.all {
         force 'com.google.code.gson:gson:2.8.0'
         force 'com.google.zxing:core:3.3.0'
         force 'com.github.bumptech.glide:glide:4.3.1'
-        force 'com.squareup.okhttp3:okhttp:3.8.1'
+        force 'com.squareup.okhttp3:okhttp:3.14.3'
         force 'com.amap.api:location:3.4.1'
         force 'com.jakewharton:butterknife:9.0.0-rc1'
         force 'io.reactivex.rxjava2:rxjava:2.1.1'
@@ -80,20 +80,20 @@ configurations.all {
         force 'cn.daily.android:bottom-navigation-view:0.0.1'
 
         //浙江在线模块依赖
-        force 'cn.com.zjol:launcher:0.0.1.54'
-        force 'cn.com.zjol:news:0.0.2.45'
-        force 'cn.com.zjol:me:0.0.1.136'
+        force 'cn.com.zjol:launcher:0.0.1.56'
+        force 'cn.com.zjol:news:0.0.2.46'
+        force 'cn.com.zjol:me:0.0.1.139'
         force 'cn.com.zjol:biz-core:0.0.1.102'
         force 'cn.com.zjol:push:0.0.1.9'
-        force 'cn.com.zjol:player:0.0.2.37'
+        force 'cn.com.zjol:player:0.0.2.41'
         force 'cn.com.zjol:detail:0.0.2.1.38'
         force 'cn.com.zjol:service:0.0.1.16'
-        force 'cn.com.zjol:video_ugc:0.0.25'
-        force 'cn.com.zjol:video_choose:0.0.8'
+        force 'cn.com.zjol:video_ugc:0.0.28'
+        force 'cn.com.zjol:video_choose:0.0.9'
         force 'cn.com.zjol:video-music:0.0.0.8'
         force 'cn.com.zjol:search:0.0.1.5'
         force 'cn.com.zjol:scanner:0.0.1.1'
-        force 'cn.com.zjol:user-home:0.0.0.49'
+        force 'cn.com.zjol:user-home:0.0.0.51'
     }
 }
 

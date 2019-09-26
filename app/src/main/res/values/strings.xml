@@ -15,6 +15,7 @@
     <string name="env_beta">apiprev.zjol.com.cn</string>
     <string name="env_online">app-api.zjol.com.cn</string>
     <string name="env_host_online">app-api.zjol.com.cn</string>
+    <string name="env_tm">tm.zjol.com.cn</string>
 
     <string name="default_host">@string/data_host</string>
     <string name="default_scheme">@string/data_scheme</string>
