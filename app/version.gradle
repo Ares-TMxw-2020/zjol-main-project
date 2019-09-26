@@ -16,7 +16,7 @@ configurations.all {
         force 'com.google.code.gson:gson:2.8.0'
         force 'com.google.zxing:core:3.3.0'
         force 'com.github.bumptech.glide:glide:4.3.1'
-        force 'com.squareup.okhttp3:okhttp:4.2.0'
+        force 'com.squareup.okhttp3:okhttp:3.14.3'
         force 'com.amap.api:location:3.4.1'
         force 'com.jakewharton:butterknife:9.0.0-rc1'
         force 'io.reactivex.rxjava2:rxjava:2.1.1'
