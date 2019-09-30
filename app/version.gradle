@@ -80,7 +80,7 @@ configurations.all {
         force 'cn.daily.android:bottom-navigation-view:0.0.1'
 
         //浙江在线模块依赖
-        force 'cn.com.zjol:launcher:0.0.1.58'
+        force 'cn.com.zjol:launcher:0.0.1.59'
         force 'cn.com.zjol:news:0.0.2.49'
         force 'cn.com.zjol:me:0.0.1.143'
         force 'cn.com.zjol:biz-core:0.0.1.107'
