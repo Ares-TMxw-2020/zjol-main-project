@@ -38,6 +38,7 @@
         <item>apibeta.zjol.com.cn</item>
         <item>apiprev.zjol.com.cn</item>
         <item>app-api.zjol.com.cn</item>
+        <item>tm.zjol.com.cn</item>
         <item>10.105.2.58</item>
     </string-array>
     <string-array name="inner_path">
