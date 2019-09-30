@@ -88,7 +88,7 @@ configurations.all {
         force 'cn.com.zjol:player:0.0.2.67'
         force 'cn.com.zjol:detail:0.0.2.1.41'
         force 'cn.com.zjol:service:0.0.1.19'
-        force 'cn.com.zjol:video_ugc:0.0.39'
+        force 'cn.com.zjol:video_ugc:0.0.40'
         force 'cn.com.zjol:video_choose:0.0.9'
         force 'cn.com.zjol:video-music:0.0.0.8'
         force 'cn.com.zjol:search:0.0.1.5'
