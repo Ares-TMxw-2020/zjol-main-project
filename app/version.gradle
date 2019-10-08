@@ -50,10 +50,12 @@ configurations.all {
         force 'com.umeng.sdk:umeng-shareboard-widget:6.9.3'
         force 'com.tencent.bugly:crashreport:latest.release'
         // 个推推送
-        force 'com.getui:sdk:2.13.2.0'
-        force 'com.getui:xmp:1.0.4'
-        force 'com.getui:hwp:1.0.5'
+        force 'com.getui:sdk:2.13.3.0'
+        force 'com.assist:oppo:1.0.3'
+        force 'com.assist:vivo:1.0.3'
+        force 'com.getui:hwp:1.0.6'
         force 'com.getui:mzp:1.0.7'
+        force 'com.getui:xmp:1.0.5'
         // 个推个像
         force 'com.getui:gisdk:3.1.9.0'
 
@@ -157,10 +159,12 @@ dependencies {
     implementation 'com.tencent.bugly:crashreport:latest.release'
 
     // 个推推送
-    implementation 'com.getui:sdk:2.13.2.0'
-    implementation 'com.getui:xmp:1.0.4'
-    implementation 'com.getui:hwp:1.0.5'
+    implementation 'com.getui:sdk:2.13.3.0'
+    implementation 'com.assist:oppo:1.0.3'
+    implementation 'com.assist:vivo:1.0.3'
+    implementation 'com.getui:hwp:1.0.6'
     implementation 'com.getui:mzp:1.0.7'
+    implementation 'com.getui:xmp:1.0.5'
     // 个推个像
     implementation 'com.getui:gisdk:3.1.9.0'
 

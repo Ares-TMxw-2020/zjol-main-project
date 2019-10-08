@@ -63,6 +63,21 @@ ext.readKeys = { buildType ->
             GETUI_APP_SECRET  : properties.getProperty("GETUI_APP_SECRET"),
             GETUI_APP_KEY     : properties.getProperty("GETUI_APP_KEY"),
             GI_APPID          : properties.getProperty("GI_APPID"),
+            // 个推 - 小米辅助推送
+            XIAOMI_APP_ID     : properties.getProperty("XIAOMI_APP_ID"),
+            XIAOMI_APP_KEY    : properties.getProperty("XIAOMI_APP_KEY"),
+            // 个推 - 华为辅助推送
+            HUAWEI_APP_ID     : properties.getProperty("HUAWEI_APP_ID"),
+            // 个推 - 魅族辅助推送
+            MEIZU_APP_ID      : properties.getProperty("MEIZU_APP_ID"),
+            MEIZU_APP_KEY     : properties.getProperty("MEIZU_APP_KEY"),
+            //个推 - OPPO 辅助推送
+            OPPO_APP_KEY      : properties.getProperty("OPPO_APP_KEY"),
+            OPPO_APP_SECRET   : properties.getProperty("OPPO_APP_SECRET"),
+            //个推 - VIVO 辅助推送
+            VIVO_APP_ID       : properties.getProperty("VIVO_APP_ID"),
+            VIVO_APP_KEY      : properties.getProperty("VIVO_APP_KEY"),
+
             GT_INSTALL_CHANNEL: properties.getProperty("GT_INSTALL_CHANNEL")
     ]
 }
