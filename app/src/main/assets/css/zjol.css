@@ -25,11 +25,11 @@ blockquote {
 	display: block;
 	background-color:#F2F2F2;
 	padding:.16rem .2rem;
-	color:#666!important;
+	color:#666!important;		   
 	}
 blockquote p{
 	color:#666!important;
-
+	
 }
 
 .wgQuote{margin:0;font-size: 16px;line-height:24px;text-align: justify; color:#666;margin-bottom: 20px}
@@ -53,7 +53,7 @@ p.imagenote{
 	padding:0;
 	height:auto !important;
 	background: #F2F2F2;
-
+		
 	}
 p.imagenote span{
 	display: inline-block;
@@ -62,12 +62,12 @@ p.imagenote span{
 }
 .moreInfo1 p{
 	color:#999;
-	font-size: 16px;
+	font-size: 14px;
 	text-align: left;
 }
 .moreInfo2 p{
 	color:#666;
-	font-size: 18px;
+	font-size: 16px !important;
 	text-align: center;
 	padding:15px 0;
 }
