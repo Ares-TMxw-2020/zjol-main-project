@@ -19,10 +19,10 @@ ext {
     } else {
         appVersionCode = 10002
         appVersionName = "1.0.2"
-        passport = "https://passport-test.8531.cn#21"
-        env = "apibeta.zjol.com.cn"
+        passport = "https://passport-test.8531.cn#44"
+        env = "app-api.zjol.com.cn"
         scheme = "https"
-        isDebug = false
+        isDebug = true
     }
 
     //签名相关
@@ -47,9 +47,9 @@ ext {
 ext.readKeys = { buildType ->
     //程序中的KEY 配置
     String keysName = 'keys-release.properties'
-    if (isDebug) {
-        keysName = 'keys-debug.properties'
-    }
+//    if (isDebug) {
+//        keysName = 'keys-debug.properties'
+//    }
 
     Properties properties = new Properties()
     properties.load(new FileInputStream(keysName))
