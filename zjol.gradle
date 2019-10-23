@@ -17,12 +17,12 @@ ext {
         scheme = properties.getProperty('scheme', "https")
         isDebug = Boolean.parseBoolean(properties.getProperty("isDebug"))
     } else {
-        appVersionCode = 10000
-        appVersionName = "1.0.0"
+        appVersionCode = 10002
+        appVersionName = "1.0.2"
         passport = "https://passport-test.8531.cn#21"
         env = "apibeta.zjol.com.cn"
         scheme = "https"
-        isDebug = true
+        isDebug = false
     }
 
     //签名相关
