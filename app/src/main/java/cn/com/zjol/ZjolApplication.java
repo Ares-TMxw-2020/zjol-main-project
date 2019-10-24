@@ -65,8 +65,8 @@ public class ZjolApplication extends MultiDexApplication {
             OnLineLocationManager.getInstance().locationUseGpsThenIp(null);
             UGC.init(this, ugcLicenceUrl, ugcKey); // 腾讯小视频初始化
             initUmeng(this, mChannel);
-            initPassport(false);
-            initAnalytic(false);
+            initPassport(debuggable);
+            initAnalytic(debuggable);
 
             new Thread(new Runnable() {
 

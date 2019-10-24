@@ -47,9 +47,9 @@ ext {
 ext.readKeys = { buildType ->
     //程序中的KEY 配置
     String keysName = 'keys-release.properties'
-//    if (isDebug) {
-//        keysName = 'keys-debug.properties'
-//    }
+    if (isDebug) {
+        keysName = 'keys-debug.properties'
+    }
 
     Properties properties = new Properties()
     properties.load(new FileInputStream(keysName))
