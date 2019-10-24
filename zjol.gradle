@@ -22,7 +22,7 @@ ext {
         passport = "https://passport-test.8531.cn#44"
         env = "app-api.zjol.com.cn"
         scheme = "https"
-        isDebug = true
+        isDebug = false
     }
 
     //签名相关
