@@ -2,6 +2,7 @@ package cn.com.zjol;
 
 import android.app.Application;
 import android.content.Context;
+import android.os.Handler;
 import android.os.Process;
 import android.support.multidex.MultiDexApplication;
 import android.text.TextUtils;
@@ -63,6 +64,13 @@ public class ZjolApplication extends MultiDexApplication {
             AppUtils.setChannel(mChannel);
             UpdateManager.init(this);
             OnLineLocationManager.getInstance().locationUseGpsThenIp(null);
+            new Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    OnLineLocationManager.getInstance().getAroundAddressList();
+                }
+            },5000);
+
             UGC.init(this, ugcLicenceUrl, ugcKey); // 腾讯小视频初始化
             initUmeng(this, mChannel);
             initPassport(debuggable);

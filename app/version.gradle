@@ -18,6 +18,7 @@ configurations.all {
         force 'com.github.bumptech.glide:glide:4.3.1'
         force 'com.squareup.okhttp3:okhttp:3.12.6'
         force 'com.amap.api:location:3.4.1'
+        force 'com.amap.api:search:6.9.2'
         force 'com.jakewharton:butterknife:9.0.0-rc1'
         force 'io.reactivex.rxjava2:rxjava:2.1.1'
         force 'io.reactivex.rxjava2:rxandroid:2.0.1'
@@ -96,7 +97,7 @@ configurations.all {
         force 'cn.com.zjol:search:0.0.1.6'
         force 'cn.com.zjol:scanner:0.0.1.1'
         force 'cn.com.zjol:user-home:1.1.0.0'
-        force 'cn.com.zjol:location:0.0.1.4-SNAPSHOT'
+        force 'cn.com.zjol:location:0.0.1.4.4-SNAPSHOT'
     }
 }
 
@@ -117,6 +118,7 @@ dependencies {
     implementation 'com.github.bumptech.glide:glide:4.3.1'
     implementation 'com.squareup.okhttp3:okhttp:3.8.1'
     implementation 'com.amap.api:location:3.4.1'
+    implementation 'com.amap.api:search:6.9.2'
     implementation 'com.jakewharton:butterknife:9.0.0-rc1'
     implementation 'io.reactivex.rxjava2:rxjava:2.1.1'
     implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
