@@ -32,7 +32,7 @@ import cn.com.zjol.push.Push;
 import cn.com.zjol.push.insight.Insight;
 import cn.daily.news.analytics.AnalyticsManager;
 import cn.daily.news.update.UpdateManager;
-import zjol.com.cn.news.location.OnLineLocationManager;
+import zjol.com.cn.location.OnLineLocationManager;
 
 public class ZjolApplication extends MultiDexApplication {
 
