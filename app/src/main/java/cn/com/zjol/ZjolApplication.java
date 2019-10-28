@@ -5,6 +5,8 @@ import android.content.Context;
 import android.os.Handler;
 import android.os.Process;
 import android.support.multidex.MultiDexApplication;
+import android.support.text.emoji.EmojiCompat;
+import android.support.text.emoji.bundled.BundledEmojiCompatConfig;
 import android.text.TextUtils;
 
 import com.aliya.uimode.UiModeManager;
@@ -68,7 +70,8 @@ public class ZjolApplication extends MultiDexApplication {
             initUmeng(this, mChannel);
             initPassport(debuggable);
             initAnalytic(debuggable);
-
+            BundledEmojiCompatConfig compatConfig=new BundledEmojiCompatConfig(this);
+            EmojiCompat.init(compatConfig);
             new Thread(new Runnable() {
 
                 @Override

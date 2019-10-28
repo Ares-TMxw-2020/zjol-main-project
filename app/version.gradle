@@ -10,6 +10,8 @@ configurations.all {
         force 'com.android.support.constraint:constraint-layout:1.1.3'
         force 'com.android.support:multidex:1.0.3'
         force 'android.arch.lifecycle:extensions:1.1.1'
+        force 'com.android.support:support-emoji-bundled:28.0.0'
+        force 'com.android.support:support-emoji-appcompat:28.0.0'
 
         //第三方依赖
         force 'com.google.android:flexbox:0.3.0'
@@ -86,10 +88,10 @@ configurations.all {
         force 'cn.com.zjol:launcher:0.0.1.67'
         force 'cn.com.zjol:news:0.0.2.65'
         force 'cn.com.zjol:me:1.1.0.1'
-        force 'cn.com.zjol:biz-core:1.0.3.3'
+        force 'cn.com.zjol:biz-core:1.0.3.4'
         force 'cn.com.zjol:push:0.0.1.11'
         force 'cn.com.zjol:player:0.0.2.96'
-        force 'cn.com.zjol:detail:0.0.2.1.48'
+        force 'cn.com.zjol:detail:0.0.2.1.49'
         force 'cn.com.zjol:service:0.0.1.20'
         force 'cn.com.zjol:video_ugc:0.0.47'
         force 'cn.com.zjol:video_choose:0.0.9'
@@ -110,6 +112,8 @@ dependencies {
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
     implementation 'com.android.support:multidex:1.0.3'
     implementation 'android.arch.lifecycle:extensions:1.1.1'
+    implementation 'com.android.support:support-emoji-bundled:28.0.0'
+    implementation 'com.android.support:support-emoji-appcompat:28.0.0'
 
     //第三方依赖
     implementation 'com.google.android:flexbox:0.3.0'
