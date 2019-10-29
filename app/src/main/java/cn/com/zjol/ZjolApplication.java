@@ -1,13 +1,17 @@
 package cn.com.zjol;
 
+import android.app.Activity;
 import android.app.Application;
 import android.content.Context;
-import android.os.Handler;
+import android.os.Bundle;
 import android.os.Process;
+import android.os.SystemClock;
 import android.support.multidex.MultiDexApplication;
 import android.support.text.emoji.EmojiCompat;
 import android.support.text.emoji.bundled.BundledEmojiCompatConfig;
+import android.support.v4.content.res.ResourcesCompat;
 import android.text.TextUtils;
+import android.util.Log;
 
 import com.aliya.uimode.UiModeManager;
 import com.core.glide.GlideMode;
@@ -27,7 +31,6 @@ import com.zjrb.passport.ZbPassport;
 import com.zjrb.passport.constant.ZbConstants;
 
 import cn.com.zjol.biz.core.UserBiz;
-import cn.com.zjol.biz.core.db.CompatV4DB;
 import cn.com.zjol.biz.core.db.SettingManager;
 import cn.com.zjol.biz.core.db.ThemeMode;
 import cn.com.zjol.biz.core.network.DailyNetworkManager;
@@ -35,6 +38,7 @@ import cn.com.zjol.push.Push;
 import cn.com.zjol.push.insight.Insight;
 import cn.daily.news.analytics.AnalyticsManager;
 import cn.daily.news.update.UpdateManager;
+import zjol.com.cn.launcher.SplashActivity;
 import zjol.com.cn.location.OnLineLocationManager;
 
 public class ZjolApplication extends MultiDexApplication {
@@ -43,16 +47,16 @@ public class ZjolApplication extends MultiDexApplication {
     private boolean debuggable;
     private String mChannel;
 
-//    String ugcLicenceUrl = "http://license.vod2.myqcloud.com/license/v1/f0f7893e23b81fb92c3045690d599d09/TXUgcSDK.licence";
-//    String ugcKey = "b12da8f7f658e110ddcfd9d7f2c33303";
-
     // 正式版
     String ugcLicenceUrl = "http://license.vod2.myqcloud.com/license/v1/5dc9e2376e5650783cb2197bd26661f7/TXUgcSDK.licence";
     String ugcKey = "98be69985348b84dd20ea564aaa9fb32";
 
+//    public static long sMillis;
+
     @Override
     public void onCreate() {
         super.onCreate();
+//        sMillis = SystemClock.uptimeMillis();
         mApp = this;
         UIUtils.init(this);
         boolean isMainProcess = TextUtils.equals(getPackageName(), AppUtils.getProcessName(Process.myPid()));
@@ -76,7 +80,10 @@ public class ZjolApplication extends MultiDexApplication {
 
                 @Override
                 public void run() {
-                    CompatV4DB.dataCleanUp(mApp);
+
+                    ResourcesCompat.getFont(getApplicationContext(), R.font.fzbiaoysk_zbjt);
+                    ResourcesCompat.getFont(getApplicationContext(), R.font.fzzcysk_zbjt);
+
                     ThemeMode.init(mApp);
                     UiModeManager.init(mApp, null);
                     DatabaseLoader.init(mApp);
@@ -86,9 +93,12 @@ public class ZjolApplication extends MultiDexApplication {
                     Insight.init(mApp);
                     //放在所有初始化的最后面，防止其他第三方SDK重写UncaughtExceptionHandler被覆盖
                     initCrashHandler(debuggable);
+
+                    getTheme().applyStyle(R.style.FangZhengFontTheme, false);
                 }
             }).start();
         }
+        registerActivityLifecycleCallbacks(mLifecycleCallbacks);
     }
 
     /**
@@ -171,4 +181,41 @@ public class ZjolApplication extends MultiDexApplication {
         // 设置唯一设备值
         CrashReport.setUserId(AppUtils.getUniquePsuedoID());
     }
+
+    private ActivityLifecycleCallbacks mLifecycleCallbacks = new ActivityLifecycleCallbacks() {
+
+        @Override
+        public void onActivityCreated(Activity activity, Bundle savedInstanceState) {
+//            Log.e("TAG", "onActivityCreated: 耗时 " + (SystemClock.uptimeMillis() - sMillis));
+            if (!(activity instanceof SplashActivity)) {
+                // 全局修改TextView字体，参数:false 表示不强制覆盖原本设置过的字体
+                activity.getTheme().applyStyle(R.style.FangZhengFontTheme, false);
+            }
+        }
+
+        @Override
+        public void onActivityStarted(Activity activity) {
+//            Log.e("TAG", "onActivityStarted: 耗时 " + (SystemClock.uptimeMillis() - sMillis));
+        }
+
+        @Override
+        public void onActivityResumed(Activity activity) {
+        }
+
+        @Override
+        public void onActivityPaused(Activity activity) {
+        }
+
+        @Override
+        public void onActivityStopped(Activity activity) {
+        }
+
+        @Override
+        public void onActivitySaveInstanceState(Activity activity, Bundle outState) {
+        }
+
+        @Override
+        public void onActivityDestroyed(Activity activity) {
+        }
+    };
 }

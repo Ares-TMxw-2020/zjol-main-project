@@ -12,7 +12,6 @@
         <!--水波纹颜色-->
         <item name="colorControlHighlight">#1f000000</item>
         <item name="android:windowIsTranslucent">false</item>
-        <item name="android:fontFamily">@font/fzbiaoysk_zbjt</item>
 
         <item name="android:navigationBarColor">#000000</item>
     </style>
