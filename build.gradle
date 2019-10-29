@@ -16,8 +16,8 @@ buildscript {
 
 allprojects {
     repositories {
-        google()
-        jcenter()
+//        google()
+//        jcenter()
         maven { url "http://10.100.62.98:8086/nexus/content/groups/public/" }
         maven { url 'https://dl.bintray.com/trsmobileteamqd/TRS-QD' }
         maven { url "http://mvn.gt.igexin.com/nexus/content/repositories/releases/" }
@@ -28,6 +28,8 @@ allprojects {
                 password 'wts!normal?703'
             }
         }//新闻报道网上传播分析系统埋点
+        maven { url "https://maven.aliyun.com/repository/google" }
+        maven { url "https://maven.aliyun.com/repository/jcenter" }
     }
 }
 
