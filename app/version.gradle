@@ -86,7 +86,7 @@ configurations.all {
 
         //浙江在线模块依赖
         force 'cn.com.zjol:launcher:0.0.1.67'
-        force 'cn.com.zjol:news:0.0.2.65'
+        force 'cn.com.zjol:news:0.0.2.66'
         force 'cn.com.zjol:me:1.1.0.1'
         force 'cn.com.zjol:biz-core:1.0.3.4'
         force 'cn.com.zjol:push:0.0.1.11'
@@ -100,6 +100,7 @@ configurations.all {
         force 'cn.com.zjol:scanner:0.0.1.1'
         force 'cn.com.zjol:user-home:1.1.0.0'
         force 'cn.com.zjol:location:0.0.1.8-SNAPSHOT'
+        force 'cn.com.zjol:topic:0.0.1-SNAPSHOT'
     }
 }
 
@@ -329,6 +330,11 @@ dependencies {
     }
 
     implementation ('cn.com.zjol:location:0.0.1-SNAPSHOT'){
+        transitive false
+        changing true
+    }
+
+    implementation ('cn.com.zjol:topic:0.0.1-SNAPSHOT'){
         transitive false
         changing true
     }
