@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="update_reachedHeight">10dp</dimen>
+    <dimen name="update_unReachedHeight">8dp</dimen>
+    <dimen name="update_percent_text_size">20sp</dimen>
+</resources>
