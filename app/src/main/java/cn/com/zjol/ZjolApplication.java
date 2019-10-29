@@ -2,8 +2,11 @@ package cn.com.zjol;
 
 import android.app.Application;
 import android.content.Context;
+import android.os.Handler;
 import android.os.Process;
 import android.support.multidex.MultiDexApplication;
+import android.support.text.emoji.EmojiCompat;
+import android.support.text.emoji.bundled.BundledEmojiCompatConfig;
 import android.text.TextUtils;
 
 import com.aliya.uimode.UiModeManager;
@@ -32,7 +35,7 @@ import cn.com.zjol.push.Push;
 import cn.com.zjol.push.insight.Insight;
 import cn.daily.news.analytics.AnalyticsManager;
 import cn.daily.news.update.UpdateManager;
-import zjol.com.cn.news.location.OnLineLocationManager;
+import zjol.com.cn.location.OnLineLocationManager;
 
 public class ZjolApplication extends MultiDexApplication {
 
@@ -67,7 +70,8 @@ public class ZjolApplication extends MultiDexApplication {
             initUmeng(this, mChannel);
             initPassport(debuggable);
             initAnalytic(debuggable);
-
+            BundledEmojiCompatConfig compatConfig=new BundledEmojiCompatConfig(this);
+            EmojiCompat.init(compatConfig);
             new Thread(new Runnable() {
 
                 @Override
