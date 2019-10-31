@@ -142,6 +142,9 @@
 -keepclassmembers class com.zjrb.core.domain.UrlCheckBean { *; }
 -keepnames class com.zjrb.core.domain.UrlCheckBean { *; }
 
+-keep class cn.com.zjol.biz.core.model.** { *; }
+-keepnames class cn.com.zjol.biz.core.model.** { *; }
+
 ### 定位
 -keep class com.daily.news.location.** { *; }
 -keepnames class com.daily.news.location.** { *; }
