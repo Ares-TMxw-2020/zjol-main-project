@@ -5,13 +5,11 @@ import android.app.Application;
 import android.content.Context;
 import android.os.Bundle;
 import android.os.Process;
-import android.os.SystemClock;
 import android.support.multidex.MultiDexApplication;
 import android.support.text.emoji.EmojiCompat;
 import android.support.text.emoji.bundled.BundledEmojiCompatConfig;
 import android.support.v4.content.res.ResourcesCompat;
 import android.text.TextUtils;
-import android.util.Log;
 
 import com.aliya.uimode.UiModeManager;
 import com.core.glide.GlideMode;
@@ -34,6 +32,7 @@ import cn.com.zjol.biz.core.UserBiz;
 import cn.com.zjol.biz.core.db.SettingManager;
 import cn.com.zjol.biz.core.db.ThemeMode;
 import cn.com.zjol.biz.core.network.DailyNetworkManager;
+import cn.com.zjol.me.util.Contacts;
 import cn.com.zjol.push.Push;
 import cn.com.zjol.push.insight.Insight;
 import cn.daily.news.analytics.AnalyticsManager;
@@ -74,7 +73,7 @@ public class ZjolApplication extends MultiDexApplication {
             initUmeng(this, mChannel);
             initPassport(debuggable);
             initAnalytic(debuggable);
-            BundledEmojiCompatConfig compatConfig=new BundledEmojiCompatConfig(this);
+            BundledEmojiCompatConfig compatConfig = new BundledEmojiCompatConfig(this);
             EmojiCompat.init(compatConfig);
             new Thread(new Runnable() {
 
@@ -91,6 +90,7 @@ public class ZjolApplication extends MultiDexApplication {
                     GlideMode.setProvincialTraffic(SettingManager.getInstance().isProvincialTraffic());
                     Push.init(mApp);
                     Insight.init(mApp);
+                    Contacts.init(mApp);
                     //放在所有初始化的最后面，防止其他第三方SDK重写UncaughtExceptionHandler被覆盖
                     initCrashHandler(debuggable);
 
