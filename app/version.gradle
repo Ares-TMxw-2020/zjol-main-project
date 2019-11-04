@@ -88,7 +88,7 @@ configurations.all {
         force 'cn.com.zjol:launcher:0.0.1.68'
         force 'cn.com.zjol:news:0.0.2.68'
         force 'cn.com.zjol:me:1.1.0.8'
-        force 'cn.com.zjol:biz-core:1.0.3.17'
+        force 'cn.com.zjol:biz-core:1.0.3.18'
         force 'cn.com.zjol:push:0.0.1.11'
         force 'cn.com.zjol:player:0.0.2.100'
         force 'cn.com.zjol:detail:0.0.2.1.51'
