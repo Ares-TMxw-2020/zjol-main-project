@@ -55,5 +55,6 @@
         <item>/agreement.html</item>
         <item>/copyright.html</item>
         <item>/license.html</item>
+        <item>/help.html</item>
     </string-array>
 </resources>
