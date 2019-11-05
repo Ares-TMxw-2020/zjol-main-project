@@ -28,6 +28,9 @@ allprojects {
                 password 'wts!normal?703'
             }
         }//新闻报道网上传播分析系统埋点
+        maven { url "https://maven.aliyun.com/repository/jcenter" }
+        maven { url "https://maven.aliyun.com/repository/google" }
+
     }
 }
 
