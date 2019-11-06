@@ -84,6 +84,8 @@ public class ZjolApplication extends MultiDexApplication {
                     initCrashHandler(debuggable);
                 }
             }).start();
+        } else {
+            UiModeManager.init(mApp, null);
         }
     }
 
