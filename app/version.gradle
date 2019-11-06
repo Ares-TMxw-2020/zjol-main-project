@@ -75,7 +75,7 @@ configurations.all {
         force 'cn.daily.android:passport:0.0.1'
         force 'cn.daily.android:audiohelper:1.0.4'
 
-        force 'cn.daily.android:common-core:0.0.6.59'
+        force 'cn.daily.android:common-core:1.0.4.1-SNAPSHOT'
         force 'com.aliya:android-uimode:2.2.1'
         force 'cn.core.android:core-glide:1.0.0'
         force 'cn.daily.android:router:0.0.3'
@@ -92,7 +92,7 @@ configurations.all {
         force 'cn.com.zjol:service:0.0.1.19'
         force 'cn.com.zjol:video_ugc:0.0.53'
         force 'cn.com.zjol:video_choose:0.0.10'
-        force 'cn.com.zjol:topic-choose:0.0.1.13-SNAPSHOT'
+        force 'cn.com.zjol:topic-choose:0.0.1.14-SNAPSHOT'
         force 'cn.com.zjol:video-music:0.0.0.10'
         force 'cn.com.zjol:search:0.0.1.5'
         force 'cn.com.zjol:scanner:0.0.1.1'
