@@ -92,7 +92,7 @@ configurations.all {
         force 'cn.com.zjol:service:0.0.1.19'
         force 'cn.com.zjol:video_ugc:0.0.55'
         force 'cn.com.zjol:video_choose:0.0.10'
-        force 'cn.com.zjol:topic-choose:0.0.1.18-SNAPSHOT'
+        force 'cn.com.zjol:topic-choose:0.0.1.0'
         force 'cn.com.zjol:video-music:0.0.0.10'
         force 'cn.com.zjol:search:0.0.1.5'
         force 'cn.com.zjol:scanner:0.0.1.1'
