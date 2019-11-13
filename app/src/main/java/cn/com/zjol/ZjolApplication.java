@@ -28,6 +28,7 @@ import com.zjrb.passport.ZbConfig;
 import com.zjrb.passport.ZbPassport;
 import com.zjrb.passport.constant.ZbConstants;
 
+import cn.com.zjol.biz.core.Mobsec;
 import cn.com.zjol.biz.core.UserBiz;
 import cn.com.zjol.biz.core.db.SettingManager;
 import cn.com.zjol.biz.core.db.ThemeMode;
@@ -80,6 +81,7 @@ public class ZjolApplication extends MultiDexApplication {
                 @Override
                 public void run() {
 
+                    // 字体提前加载并缓存
                     ResourcesCompat.getFont(getApplicationContext(), R.font.fzbiaoysk_zbjt);
                     ResourcesCompat.getFont(getApplicationContext(), R.font.fzzcysk_zbjt);
 
@@ -95,6 +97,9 @@ public class ZjolApplication extends MultiDexApplication {
                     initCrashHandler(debuggable);
 
                     getTheme().applyStyle(R.style.FangZhengFontTheme, false);
+
+                    // 网易易盾初始化
+                    Mobsec.init(getApplicationContext(), "YD00980345767024");
                 }
             }).start();
         } else {

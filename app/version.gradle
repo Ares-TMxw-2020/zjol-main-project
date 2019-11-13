@@ -85,10 +85,10 @@ configurations.all {
         force 'cn.daily.android:bottom-navigation-view:0.0.1'
 
         //浙江在线模块依赖
-        force 'cn.com.zjol:launcher:0.0.1.69'
+        force 'cn.com.zjol:launcher:0.0.1.70'
         force 'cn.com.zjol:news:0.0.2.69-SNAPSHOT'
         force 'cn.com.zjol:me:1.1.0.10'
-        force 'cn.com.zjol:biz-core:1.1.0.4-SNAPSHOT'
+        force 'cn.com.zjol:biz-core:1.1.0.5-SNAPSHOT'
         force 'cn.com.zjol:push:0.0.1.11'
         force 'cn.com.zjol:player:0.0.2.102-SNAPSHOT'
         force 'cn.com.zjol:detail:0.0.2.1.51'
@@ -133,7 +133,7 @@ dependencies {
     implementation 'com.trs.ta:ta2:2.0.1'
     implementation 'org.greenrobot:greendao:3.2.2'
     implementation 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+'
-    implementation 'com.netease.mobsec:netmobsecLib:4.2.2.1'
+    implementation 'com.netease.mobsec:netmobsecLib:4.2.6'
 //    implementation 'com.shuwen.analytics:analytics-sdk:1.2.0'
 //    implementation 'com.netease.android:insightar:1.4.6'
     implementation 'org.apache.ant:ant:1.7.0'
