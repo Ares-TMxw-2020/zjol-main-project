@@ -307,6 +307,10 @@
 -keepnames class cn.daily.android.sail.list.model.** { *; }
 ############
 
+## 话题
+-keep class zjol.com.cn.topic.bean.** { *; }
+-keepnames class zjol.com.cn.topic.bean.** { *; }
+
 
 #-------------------------------------------------------------------------
 

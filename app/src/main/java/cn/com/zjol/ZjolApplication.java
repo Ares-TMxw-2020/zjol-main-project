@@ -97,6 +97,8 @@ public class ZjolApplication extends MultiDexApplication {
                     getTheme().applyStyle(R.style.FangZhengFontTheme, false);
                 }
             }).start();
+        } else {
+            UiModeManager.init(mApp, null);
         }
         registerActivityLifecycleCallbacks(mLifecycleCallbacks);
     }
