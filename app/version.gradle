@@ -100,7 +100,7 @@ configurations.all {
         force 'cn.com.zjol:search:0.0.1.6'
         force 'cn.com.zjol:scanner:0.0.1.1'
         force 'cn.com.zjol:user-home:1.1.0.2'
-        force 'cn.com.zjol:location:0.0.1.14-SNAPSHOT'
+        force 'cn.com.zjol:location:0.0.1.15-SNAPSHOT'
         force 'cn.com.zjol:topic:0.0.1.9-SNAPSHOT'
     }
 }
