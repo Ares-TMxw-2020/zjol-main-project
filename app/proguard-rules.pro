@@ -311,6 +311,10 @@
 -keep class zjol.com.cn.topic.bean.** { *; }
 -keepnames class zjol.com.cn.topic.bean.** { *; }
 
+## 列表库
+-keep class zjol.com.cn.list.bean.** { *; }
+-keepnames class zjol.com.cn.list.bean.** { *; }
+
 
 #-------------------------------------------------------------------------
 
