@@ -193,16 +193,14 @@ public class ZjolApplication extends MultiDexApplication {
 
         @Override
         public void onActivityCreated(Activity activity, Bundle savedInstanceState) {
-//            Log.e("TAG", "onActivityCreated: 耗时 " + (SystemClock.uptimeMillis() - sMillis));
             if (!(activity instanceof SplashActivity)) {
-                // 全局修改TextView字体，参数:false 表示不强制覆盖原本设置过的字体
+                // 全局修改TextView字体，第二个参数:false 表示不强制覆盖原主题设置过的字体
                 activity.getTheme().applyStyle(R.style.FangZhengFontTheme, false);
             }
         }
 
         @Override
         public void onActivityStarted(Activity activity) {
-//            Log.e("TAG", "onActivityStarted: 耗时 " + (SystemClock.uptimeMillis() - sMillis));
         }
 
         @Override
