@@ -93,14 +93,14 @@ configurations.all {
         force 'cn.com.zjol:player:0.0.2.102-SNAPSHOT'
         force 'cn.com.zjol:detail:1.1.0.1'
         force 'cn.com.zjol:service:0.0.1.20'
-        force 'cn.com.zjol:video_ugc:0.0.59'
+        force 'cn.com.zjol:video_ugc:0.0.60'
         force 'cn.com.zjol:video_choose:0.0.10'
         force 'cn.com.zjol:video-music:1.1.0.0'
-        force 'cn.com.zjol:topic-choose:0.0.1.4'
+        force 'cn.com.zjol:topic-choose:0.0.1.5'
         force 'cn.com.zjol:search:0.0.1.6'
         force 'cn.com.zjol:scanner:0.0.1.1'
         force 'cn.com.zjol:user-home:1.1.0.2'
-        force 'cn.com.zjol:location:0.0.1.15-SNAPSHOT'
+        force 'cn.com.zjol:location:0.0.1.16-SNAPSHOT'
         force 'cn.com.zjol:topic:0.0.1.9-SNAPSHOT'
     }
 }
