@@ -5,5 +5,7 @@
     <color name="colorAccent">#FF4081</color>
 
     <color name="update_top_title_tip_color">#36A3BC</color>
-
+    <color name="update_un_reached_color">#E8F0F3</color>
+    <color name="update_percent_text_color">#36A3BC</color>
+    <color name="update_reached_color">#36A3BC</color>
 </resources>
