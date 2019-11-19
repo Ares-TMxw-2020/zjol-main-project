@@ -52,12 +52,9 @@ public class ZjolApplication extends MultiDexApplication {
     String ugcLicenceUrl = "http://license.vod2.myqcloud.com/license/v1/5dc9e2376e5650783cb2197bd26661f7/TXUgcSDK.licence";
     String ugcKey = "98be69985348b84dd20ea564aaa9fb32";
 
-//    public static long sMillis;
-
     @Override
     public void onCreate() {
         super.onCreate();
-//        sMillis = SystemClock.uptimeMillis();
         mApp = this;
         UIUtils.init(this);
         boolean isMainProcess = TextUtils.equals(getPackageName(), AppUtils.getProcessName(Process.myPid()));
