@@ -91,7 +91,7 @@ configurations.all {
         force 'cn.com.zjol:launcher:0.0.1.64.51'
         force 'cn.com.zjol:news:0.0.2.55.8'
         force 'cn.com.zjol:me:1.0.6.1'
-        force 'cn.com.zjol:biz-core:1.0.6.3'
+        force 'cn.com.zjol:biz-core:1.0.6.5'
         force 'cn.com.zjol:push:0.0.1.10'
         force 'cn.com.zjol:player:0.0.2.86.14'
         force 'cn.com.zjol:detail:0.0.2.1.45'
