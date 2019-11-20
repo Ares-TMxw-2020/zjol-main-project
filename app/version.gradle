@@ -88,12 +88,12 @@ configurations.all {
         force 'cn.daily.android:bottom-navigation-view:0.0.1'
 
         //浙江在线模块依赖
-        force 'cn.com.zjol:launcher:0.0.1.64'
+        force 'cn.com.zjol:launcher:0.0.1.64.51'
         force 'cn.com.zjol:news:0.0.2.55.8'
         force 'cn.com.zjol:me:1.0.6.0'
         force 'cn.com.zjol:biz-core:1.0.6.2'
         force 'cn.com.zjol:push:0.0.1.10'
-        force 'cn.com.zjol:player:0.0.2.86.11'
+        force 'cn.com.zjol:player:0.0.2.86.13'
         force 'cn.com.zjol:detail:0.0.2.1.45'
         force 'cn.com.zjol:service:0.0.1.19'
         force 'cn.com.zjol:video_ugc:0.0.56'
@@ -103,7 +103,7 @@ configurations.all {
         force 'cn.com.zjol:search:0.0.1.5'
         force 'cn.com.zjol:scanner:0.0.1.1'
         force 'cn.com.zjol:user-home:1.0.3.0'
-        force 'cn.com.zjol:topic:0.0.1.8.1'
+        force 'cn.com.zjol:topic:0.0.1.9-SNAPSHOT'
         force 'cn.com.zjol:quick-login:0.0.0.4'
     }
 }
