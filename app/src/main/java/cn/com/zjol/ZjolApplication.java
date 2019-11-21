@@ -80,8 +80,8 @@ public class ZjolApplication extends MultiDexApplication {
                 public void run() {
 
                     // 字体提前加载并缓存
-                    ResourcesCompat.getFont(getApplicationContext(), R.font.fzbiaoysk_zbjt);
-                    ResourcesCompat.getFont(getApplicationContext(), R.font.fzzcysk_zbjt);
+                    ResourcesCompat.getFont(mApp, R.font.fzbiaoysk_zbjt);
+                    ResourcesCompat.getFont(mApp, R.font.fzzcysk_zbjt);
 
                     ThemeMode.init(mApp);
                     UiModeManager.init(mApp, null);
@@ -196,6 +196,7 @@ public class ZjolApplication extends MultiDexApplication {
                 // 全局修改TextView字体，第二个参数:false 表示不强制覆盖原主题设置过的字体
                 activity.getTheme().applyStyle(R.style.FangZhengFontTheme, false);
             }
+            OneClickLogin.fitChinaMobileTypeface(activity, ResourcesCompat.getFont(activity, R.font.fzbiaoysk_zbjt));
         }
 
         @Override
