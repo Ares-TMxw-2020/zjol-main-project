@@ -1,11 +1,13 @@
 package cn.com.zjol;
 
+import android.app.Activity;
 import android.app.Application;
 import android.content.Context;
 import android.os.Process;
 import android.support.multidex.MultiDexApplication;
 import android.support.text.emoji.EmojiCompat;
 import android.support.text.emoji.bundled.BundledEmojiCompatConfig;
+import android.support.v4.content.res.ResourcesCompat;
 import android.text.TextUtils;
 
 import com.aliya.uimode.UiModeManager;
@@ -33,6 +35,7 @@ import cn.com.zjol.biz.core.network.DailyNetworkManager;
 import cn.com.zjol.push.Push;
 import cn.com.zjol.push.insight.Insight;
 import cn.com.zjol.quick_login.OneClickLogin;
+import cn.com.zjol.quick_login.common.AbsActivityLifecycleCallbacks;
 import cn.daily.news.analytics.AnalyticsManager;
 import cn.daily.news.update.UpdateManager;
 import zjol.com.cn.news.location.OnLineLocationManager;
@@ -84,7 +87,7 @@ public class ZjolApplication extends MultiDexApplication {
                     GlideMode.setProvincialTraffic(SettingManager.getInstance().isProvincialTraffic());
                     Push.init(mApp);
                     Insight.init(mApp);
-                    OneClickLogin.init(mApp, "ad356081117148588b7c2376333de0a5");
+                    initOneClickLogin();
                     //放在所有初始化的最后面，防止其他第三方SDK重写UncaughtExceptionHandler被覆盖
                     initCrashHandler(debuggable);
                 }
@@ -92,6 +95,19 @@ public class ZjolApplication extends MultiDexApplication {
         } else {
             UiModeManager.init(mApp, null);
         }
+    }
+
+    /**
+     * 初始化一键登录
+     */
+    private void initOneClickLogin() {
+        OneClickLogin.init(mApp, "ad356081117148588b7c2376333de0a5");
+        registerActivityLifecycleCallbacks(new AbsActivityLifecycleCallbacks() {
+            @Override
+            public void onActivityStarted(Activity activity) {
+                OneClickLogin.fitChinaMobileTypeface(activity, ResourcesCompat.getFont(activity, R.font.fzbiaoysk_zbjt));
+            }
+        });
     }
 
     /**
