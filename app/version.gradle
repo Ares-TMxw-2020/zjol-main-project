@@ -94,7 +94,7 @@ configurations.all {
         force 'cn.com.zjol:biz-core:1.0.6.5'
         force 'cn.com.zjol:push:0.0.1.10'
         force 'cn.com.zjol:player:0.0.2.86.14'
-        force 'cn.com.zjol:detail:0.0.2.1.45'
+        force 'cn.com.zjol:detail:1.0.6.2'
         force 'cn.com.zjol:service:0.0.1.19'
         force 'cn.com.zjol:video_ugc:0.0.56'
         force 'cn.com.zjol:video_choose:0.0.10'
@@ -168,6 +168,9 @@ dependencies {
     implementation 'com.umeng.sdk:umeng-social-tool:6.9.3'
     implementation 'com.umeng.sdk:umeng-shareboard-widget:6.9.3'
     implementation 'com.tencent.bugly:crashreport:latest.release'
+
+    implementation 'cn.dreamtobe.kpswitch:library:1.6.1'
+
 
     // 个推推送
     implementation 'com.getui:sdk:2.13.3.0'
