@@ -5,11 +5,13 @@ import android.app.Application;
 import android.content.Context;
 import android.os.Bundle;
 import android.os.Process;
+import android.os.SystemClock;
 import android.support.multidex.MultiDexApplication;
 import android.support.text.emoji.EmojiCompat;
 import android.support.text.emoji.bundled.BundledEmojiCompatConfig;
 import android.support.v4.content.res.ResourcesCompat;
 import android.text.TextUtils;
+import android.util.Log;
 
 import com.aliya.uimode.UiModeManager;
 import com.core.glide.GlideMode;
@@ -59,32 +61,16 @@ public class ZjolApplication extends MultiDexApplication {
         UIUtils.init(this);
         boolean isMainProcess = TextUtils.equals(getPackageName(), AppUtils.getProcessName(Process.myPid()));
         if (isMainProcess) {
-            debuggable = UIUtils.isDebuggable();
-            DailyNetworkManager.init(this);
-            mChannel = WalleChannelReader.getChannel(this);
-            if (TextUtils.isEmpty(mChannel)) {
-                mChannel = "bianfeng";
-            }
-            AppUtils.setChannel(mChannel);
-            UpdateManager.init(this);
-            OnLineLocationManager.getInstance().locationUseGpsThenIp(null);
-            UGC.init(this, ugcLicenceUrl, ugcKey); // 腾讯小视频初始化
-            initUmeng(this, mChannel);
-            initPassport(debuggable);
-            initAnalytic(debuggable);
-            BundledEmojiCompatConfig compatConfig = new BundledEmojiCompatConfig(this);
-            EmojiCompat.init(compatConfig);
             new Thread(new Runnable() {
 
                 @Override
                 public void run() {
+                    UiModeManager.init(mApp, null);
 
                     // 字体提前加载并缓存
                     ResourcesCompat.getFont(mApp, R.font.fzbiaoysk_zbjt);
                     ResourcesCompat.getFont(mApp, R.font.fzzcysk_zbjt);
 
-                    ThemeMode.init(mApp);
-                    UiModeManager.init(mApp, null);
                     DatabaseLoader.init(mApp);
                     ReadRecordHelper.initReadIds();
                     GlideMode.setProvincialTraffic(SettingManager.getInstance().isProvincialTraffic());
@@ -101,6 +87,21 @@ public class ZjolApplication extends MultiDexApplication {
                     Mobsec.init(getApplicationContext(), "YD00980345767024");
                 }
             }).start();
+            debuggable = UIUtils.isDebuggable();
+            DailyNetworkManager.init(this);
+            mChannel = WalleChannelReader.getChannel(this);
+            if (TextUtils.isEmpty(mChannel)) {
+                mChannel = "bianfeng";
+            }
+            AppUtils.setChannel(mChannel);
+            UpdateManager.init(this);
+            OnLineLocationManager.getInstance().locationUseGpsThenIp(null);
+            UGC.init(this, ugcLicenceUrl, ugcKey); // 腾讯小视频初始化
+            initUmeng(this, mChannel);
+            initPassport(debuggable);
+            initAnalytic(debuggable);
+            BundledEmojiCompatConfig compatConfig = new BundledEmojiCompatConfig(this);
+            EmojiCompat.init(compatConfig);
         } else {
             UiModeManager.init(mApp, null);
         }
