@@ -95,7 +95,7 @@ configurations.all {
         force 'cn.com.zjol:biz-core:1.1.0.7-SNAPSHOT'
         force 'cn.com.zjol:push:0.0.1.11'
         force 'cn.com.zjol:player:0.0.2.105-SNAPSHOT'
-        force 'cn.com.zjol:detail:1.1.0.2'
+        force 'cn.com.zjol:detail:1.1.0.3'
         force 'cn.com.zjol:service:0.0.1.20'
         force 'cn.com.zjol:video_ugc:0.0.60'
         force 'cn.com.zjol:video_choose:0.0.10'
@@ -105,7 +105,7 @@ configurations.all {
         force 'cn.com.zjol:scanner:0.0.1.1'
         force 'cn.com.zjol:user-home:1.1.0.3'
         force 'cn.com.zjol:location:0.0.1.16-SNAPSHOT'
-        force 'cn.com.zjol:topic:0.0.1.9-SNAPSHOT'
+        force 'cn.com.zjol:topic:0.0.1.50-SNAPSHOT'
         force 'cn.com.zjol:quick-login:0.0.0.9'
         force 'cn.com.zjol:list:0.0.1-SNAPSHOT'
     }
