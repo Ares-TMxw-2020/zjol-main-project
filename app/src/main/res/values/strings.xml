@@ -57,6 +57,8 @@
         <item>/license.html</item>
         <item>/topic_label.html</item>
         <item>/help.html</item>
+        <item>/topic_label.html</item>
+        <item>/pgc_topic_label.html</item>
     </string-array>
 
     <!--签名校检-->
