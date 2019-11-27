@@ -522,6 +522,9 @@ public static java.lang.String TABLENAME;
 -dontwarn com.bumptech.glide.load.resource.bitmap.Downsampler
 -dontwarn com.bumptech.glide.load.resource.bitmap.HardwareConfigState
 
+### exoplayer播放器
+-keep class com.google.android.exoplayer.** {*;}
+
 ### bugly
 -dontwarn com.tencent.bugly.**
 -keep public class com.tencent.bugly.**{*;}
