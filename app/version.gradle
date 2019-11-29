@@ -89,13 +89,13 @@ configurations.all {
         force 'cn.daily.android:bottom-navigation-view:0.0.1'
 
         //浙江在线模块依赖
-        force 'cn.com.zjol:launcher:0.0.1.71'
-        force 'cn.com.zjol:news:0.0.2.79'
+        force 'cn.com.zjol:launcher:0.0.1.71-SNAPSHOT'
+        force 'cn.com.zjol:news:0.0.2.80-SNAPSHOT'
         force 'cn.com.zjol:me:1.1.0.22'
         force 'cn.com.zjol:biz-core:1.1.0.12'
         force 'cn.com.zjol:push:0.0.1.11'
         force 'cn.com.zjol:player:0.0.2.111-SNAPSHOT'
-        force 'cn.com.zjol:detail:1.1.0.5-SNAPSHOT'
+        force 'cn.com.zjol:detail:1.1.0.6'
         force 'cn.com.zjol:service:0.0.1.20'
         force 'cn.com.zjol:video_ugc:0.0.60'
         force 'cn.com.zjol:video_choose:0.0.10'
@@ -105,10 +105,11 @@ configurations.all {
         force 'cn.com.zjol:scanner:0.0.1.1'
         force 'cn.com.zjol:user-home:1.1.0.7'
         force 'cn.com.zjol:location:0.0.1.16-SNAPSHOT'
-        force 'cn.com.zjol:topic:0.0.1.55-SNAPSHOT'
+        force 'cn.com.zjol:topic:0.0.1.56-SNAPSHOT'
         force 'cn.com.zjol:quick-login:0.0.0.9'
-        force 'cn.com.zjol:list:0.0.1.4-SNAPSHOT'
+        force 'cn.com.zjol:list:0.0.1.5-SNAPSHOT'
         force 'cn.com.zjol:comment:0.0.1.4'
+        force 'cn.daily.android:tab-layout:0.0.1.1-SNAPSHOT'
     }
 }
 
@@ -355,6 +356,10 @@ dependencies {
         changing true
     }
     implementation('cn.com.zjol:comment:0.0.1.4') {
+        transitive false
+        changing true
+    }
+    implementation('cn.daily.android:tab-layout:0.0.1-SNAPSHOT') {
         transitive false
         changing true
     }
