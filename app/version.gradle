@@ -51,7 +51,7 @@ configurations.all {
         force 'com.umeng.sdk:umeng-share-sina-simplify:6.9.3'
         force 'com.umeng.sdk:umeng-social-tool:6.9.3'
         force 'com.umeng.sdk:umeng-shareboard-widget:6.9.3'
-        force 'com.tencent.bugly:crashreport:latest.release'
+        force 'com.tencent.bugly:crashreport:3.1.0'
         // 个推推送
         force 'com.getui:sdk:2.13.3.0'
         force 'com.assist:oppo:1.0.3'
