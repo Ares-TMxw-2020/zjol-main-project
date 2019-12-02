@@ -102,7 +102,7 @@ configurations.all {
         force 'cn.com.zjol:video_choose:0.0.10'
         force 'cn.com.zjol:video-music:1.1.0.0'
         force 'cn.com.zjol:topic-choose:0.0.1.5'
-        force 'cn.com.zjol:search:0.0.1.7'
+        force 'cn.com.zjol:search:0.0.1.8'
         force 'cn.com.zjol:scanner:0.0.1.1'
         force 'cn.com.zjol:user-home:1.1.0.8'
         force 'cn.com.zjol:location:0.0.1.17-SNAPSHOT'
