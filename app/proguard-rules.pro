@@ -315,6 +315,10 @@
 -keep class zjol.com.cn.list.bean.** { *; }
 -keepnames class zjol.com.cn.list.bean.** { *; }
 
+## 评论
+-keep class cn.com.zjol.comment.model.** { *; }
+-keepnames class cn.com.zjol.comment.model.** { *; }
+
 
 #-------------------------------------------------------------------------
 
