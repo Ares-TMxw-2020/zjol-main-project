@@ -109,7 +109,7 @@ configurations.all {
         force 'cn.com.zjol:topic:0.0.1.56-SNAPSHOT'
         force 'cn.com.zjol:quick-login:0.0.0.9'
         force 'cn.com.zjol:list:0.0.1.5-SNAPSHOT'
-        force 'cn.com.zjol:comment:0.0.1.5'
+        force 'cn.com.zjol:comment:0.0.1.6'
     }
 }
 
