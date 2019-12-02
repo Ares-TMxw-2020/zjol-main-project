@@ -95,7 +95,7 @@ configurations.all {
         force 'cn.com.zjol:me:1.1.0.25'
         force 'cn.com.zjol:biz-core:1.1.0.13'
         force 'cn.com.zjol:push:0.0.1.11'
-        force 'cn.com.zjol:player:0.0.2.112-SNAPSHOT'
+        force 'cn.com.zjol:player:0.0.2.113-SNAPSHOT'
         force 'cn.com.zjol:detail:1.1.0.8'
         force 'cn.com.zjol:service:0.0.1.20'
         force 'cn.com.zjol:video_ugc:0.0.60'
