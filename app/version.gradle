@@ -85,7 +85,7 @@ configurations.all {
         force 'cn.daily.android:common-core:0.0.6.60'
         force 'com.aliya:android-uimode:2.2.1'
         force 'cn.core.android:core-glide:1.0.0'
-        force 'cn.daily.android:router:0.0.3'
+        force 'cn.daily.android:router:0.0.3.1'
         force 'cn.daily.android:bottom-navigation-view:0.0.1'
         force 'cn.daily.android:tab-layout:0.0.1.1-SNAPSHOT'
 
@@ -95,7 +95,7 @@ configurations.all {
         force 'cn.com.zjol:me:1.1.0.38'
         force 'cn.com.zjol:biz-core:1.1.0.16'
         force 'cn.com.zjol:push:0.0.1.11'
-        force 'cn.com.zjol:player:0.0.2.116'
+        force 'cn.com.zjol:player:0.0.2.117-SNAPSHOT'
         force 'cn.com.zjol:detail:1.1.0.9'
         force 'cn.com.zjol:service:0.0.1.20'
         force 'cn.com.zjol:video_ugc:0.0.60'
