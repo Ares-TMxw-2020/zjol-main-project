@@ -49,8 +49,7 @@ public class ZjolApplication extends MultiDexApplication {
     private String mChannel;
 
     // 正式版
-    String ugcLicenceUrl = "http://license.vod2.myqcloud" +
-            ".com/license/v1/5dc9e2376e5650783cb2197bd26661f7/TXUgcSDK.licence";
+    String ugcLicenceUrl = "http://license.vod2.myqcloud.com/license/v1/5dc9e2376e5650783cb2197bd26661f7/TXUgcSDK.licence";
     String ugcKey = "98be69985348b84dd20ea564aaa9fb32";
 
     @Override
@@ -58,8 +57,7 @@ public class ZjolApplication extends MultiDexApplication {
         super.onCreate();
         mApp = this;
         UIUtils.init(this);
-        boolean isMainProcess = TextUtils.equals(getPackageName(),
-                AppUtils.getProcessName(Process.myPid()));
+        boolean isMainProcess = TextUtils.equals(getPackageName(), AppUtils.getProcessName(Process.myPid()));
         if (isMainProcess) {
             new Thread(new Runnable() {
 
@@ -121,8 +119,7 @@ public class ZjolApplication extends MultiDexApplication {
         passport = params[0];
         String clientId = params[1];
         ZbPassport.init(this,
-                new ZbConfig.Builder().setEnvType(isDebug ? ZbConstants.Env.CUSTOM :
-                        ZbConstants.Env.OFFICIAL)
+                new ZbConfig.Builder().setEnvType(isDebug ? ZbConstants.Env.CUSTOM : ZbConstants.Env.OFFICIAL)
                         .setDebug(isDebug)
                         .setHost(passport)
                         .setAppVersion("1.0")
@@ -138,15 +135,13 @@ public class ZjolApplication extends MultiDexApplication {
         long mpID = isDebug ? 102 : 100;
         String statisticsURL = isDebug ? "https://ta.8531.cn/c" : "https://ta.8531.cn/c";
 
-        AnalyticsManager.TAConfig taConfig = new AnalyticsManager.TAConfig(appKey, mpID,
-                statisticsURL);
+        AnalyticsManager.TAConfig taConfig = new AnalyticsManager.TAConfig(appKey, mpID, statisticsURL);
         taConfig.setEnable(true);
         if (UserBiz.get() != null && UserBiz.get().isLoginUser()) {
             taConfig.setAccountId(UserBiz.get().getAccountID());
         }
 
-        String saStatisticsURL = isDebug ? "http://sa.tmuyun.com/sa?project=zjxwtest" : "http" +
-                "://sa.tmuyun.com/sa?project=zjxwprod";
+        String saStatisticsURL = isDebug ? "http://sa.tmuyun.com/sa?project=zjxwtest" : "http://sa.tmuyun.com/sa?project=zjxwprod";
         AnalyticsManager.SAConfig saConfig = new AnalyticsManager.SAConfig(saStatisticsURL);
         saConfig.setEnable(false);
         if (UserBiz.get() != null && UserBiz.get().isLoginUser()) {
@@ -164,8 +159,7 @@ public class ZjolApplication extends MultiDexApplication {
             shwConfig.setAccountId(UserBiz.get().getAccountID());
         }
 
-        AnalyticsManager.initAnalytics(this, AppUtils.getChannelName(), taConfig, saConfig,
-                shwConfig);
+        AnalyticsManager.initAnalytics(this, AppUtils.getChannelName(), taConfig, saConfig, shwConfig);
     }
 
 
@@ -173,12 +167,10 @@ public class ZjolApplication extends MultiDexApplication {
      * 友盟第三方登录
      */
     private void initUmeng(Context context, String channel) {
-        UMConfigure.init(context, "5d5664b53fc19587cb000f83", channel,
-                UMConfigure.DEVICE_TYPE_PHONE, "");
+        UMConfigure.init(context, "5d5664b53fc19587cb000f83", channel, UMConfigure.DEVICE_TYPE_PHONE, "");
         UMShareAPI.get(context).setShareConfig(new UMShareConfig().isNeedAuthOnGetUserInfo(true));
         PlatformConfig.setWeixin("wx6979efeb905e22f3", "b483df3317162dab6fb0b17aac581026");
-        PlatformConfig.setSinaWeibo("1688425623", "7be1dd6d1365a8bc307c253366e3ab5a", "https" +
-                "://www.zjol.com.cn");
+        PlatformConfig.setSinaWeibo("1688425623", "7be1dd6d1365a8bc307c253366e3ab5a", "https://www.zjol.com.cn");
         PlatformConfig.setQQZone("101781365", "c84c1077680a30601670e741265e1442");
         PlatformConfig.setDing("dingoa65puwgwj5n2tpzlf");
     }
@@ -192,8 +184,7 @@ public class ZjolApplication extends MultiDexApplication {
         String processName = AppUtils.getProcessName(android.os.Process.myPid());
         CrashReport.UserStrategy strategy = new CrashReport.UserStrategy(this);
         strategy.setUploadProcess(processName == null || processName.equals(getPackageName()));
-        CrashReport.initCrashReport(this, UIUtils.getString(R.string.BUGLY_APPID), isDebug,
-                strategy);
+        CrashReport.initCrashReport(this, UIUtils.getString(R.string.BUGLY_APPID), isDebug, strategy);
         // 设置当前APP渠道
         CrashReport.setAppChannel(this, mChannel);
         // 设置唯一设备值
@@ -212,8 +203,7 @@ public class ZjolApplication extends MultiDexApplication {
 
         @Override
         public void onActivityStarted(Activity activity) {
-            OneClickLogin.fitChinaMobileTypeface(activity, ResourcesCompat.getFont(activity,
-                    R.font.fzbiaoysk_zbjt));
+            OneClickLogin.fitChinaMobileTypeface(activity, R.font.fzbiaoysk_zbjt);
         }
 
         @Override
