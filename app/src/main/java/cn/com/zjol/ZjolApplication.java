@@ -201,7 +201,7 @@ public class ZjolApplication extends MultiDexApplication {
 
         @Override
         public void onActivityStarted(Activity activity) {
-            OneClickLogin.fitChinaMobileTypeface(activity, ResourcesCompat.getFont(activity, R.font.fzbiaoysk_zbjt));
+            OneClickLogin.fitChinaMobileTypeface(activity, R.font.fzbiaoysk_zbjt);
         }
 
         @Override
