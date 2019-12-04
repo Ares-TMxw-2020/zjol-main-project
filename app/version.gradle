@@ -104,7 +104,7 @@ configurations.all {
         force 'cn.com.zjol:scanner:0.0.1.1'
         force 'cn.com.zjol:user-home:1.0.6.1'
         force 'cn.com.zjol:quick-login:0.0.0.9'
-        force 'cn.com.zjol:topic:0.0.1.10'
+        force 'cn.com.zjol:topic:0.0.1.10.1'
     }
 }
 
