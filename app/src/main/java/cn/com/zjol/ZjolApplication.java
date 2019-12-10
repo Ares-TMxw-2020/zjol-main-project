@@ -13,6 +13,7 @@ import android.support.v4.content.res.ResourcesCompat;
 import android.text.TextUtils;
 
 import com.aliya.uimode.UiModeManager;
+import com.bumptech.glide.Glide;
 import com.core.glide.GlideMode;
 import com.meituan.android.walle.WalleChannelReader;
 import com.tencent.bugly.crashreport.CrashReport;
@@ -21,6 +22,7 @@ import com.umeng.socialize.PlatformConfig;
 import com.umeng.socialize.UMShareAPI;
 import com.umeng.socialize.UMShareConfig;
 import com.zjol.video.UGC;
+import com.zjrb.core.common.glide.GlideApp;
 import com.zjrb.core.utils.AppUtils;
 import com.zjrb.core.utils.UIUtils;
 import com.zjrb.daily.db.DatabaseLoader;
@@ -87,6 +89,8 @@ public class ZjolApplication extends MultiDexApplication {
 
                     // 网易易盾初始化
                     Mobsec.init(getApplicationContext(), "YD00980345767024");
+                    // Glide 提前初始化Bugly统计并发异常
+                    Glide.get(getApplicationContext());
                 }
             }).start();
             debuggable = UIUtils.isDebuggable();
