@@ -107,7 +107,7 @@ configurations.all {
         force 'cn.com.zjol:user-home:1.1.0.13'
         force 'cn.com.zjol:location:1.1.0.0'
         force 'cn.com.zjol:topic:0.0.1.66'
-        force 'cn.com.zjol:quick-login:0.0.0.12'
+        force 'cn.com.zjol:quick-login:1.1.0.0'
         force 'cn.com.zjol:list:0.0.1.8'
         force 'cn.com.zjol:comment:0.0.1.6'
     }
