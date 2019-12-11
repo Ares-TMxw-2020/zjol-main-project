@@ -12,6 +12,7 @@ import android.support.text.emoji.bundled.BundledEmojiCompatConfig;
 import android.support.v4.content.res.ResourcesCompat;
 import android.text.TextUtils;
 
+import com.aliya.compat.CrashCompat;
 import com.aliya.uimode.UiModeManager;
 import com.bumptech.glide.Glide;
 import com.core.glide.GlideMode;
@@ -22,7 +23,6 @@ import com.umeng.socialize.PlatformConfig;
 import com.umeng.socialize.UMShareAPI;
 import com.umeng.socialize.UMShareConfig;
 import com.zjol.video.UGC;
-import com.zjrb.core.common.glide.GlideApp;
 import com.zjrb.core.utils.AppUtils;
 import com.zjrb.core.utils.UIUtils;
 import com.zjrb.daily.db.DatabaseLoader;
@@ -193,6 +193,8 @@ public class ZjolApplication extends MultiDexApplication {
         CrashReport.setAppChannel(this, mChannel);
         // 设置唯一设备值
         CrashReport.setUserId(AppUtils.getUniquePsuedoID());
+
+        CrashCompat.fixBug(); // 必须在 Bugly 初始化之后
     }
 
     private ActivityLifecycleCallbacks mLifecycleCallbacks = new ActivityLifecycleCallbacks() {
