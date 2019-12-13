@@ -2,7 +2,6 @@
 <resources>
 
     <style name="CoreTheme.Base" parent="@style/CoreTheme">
-        <item name="android:fontFamily">@font/fzbiaoysk_zbjt</item>
     </style>
 
     <style name="AppTheme" parent="CoreTheme.Base">
@@ -21,5 +20,9 @@
         <item name="android:fontFamily">@font/fzzcysk_zbjt</item>
         <item name="android:layout_marginLeft">@dimen/toolbar_normal_height</item>
         <item name="android:layout_marginRight">@dimen/toolbar_normal_height</item>
+    </style>
+
+    <style name="FangZhengFontTheme">
+        <item name="android:fontFamily">@font/fzbiaoysk_zbjt</item>
     </style>
 </resources>

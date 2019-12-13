@@ -3,12 +3,12 @@ apply from: 'zjol.gradle'
 buildscript {
 
     repositories {
-//        google()
-//        jcenter()
         maven { url "https://maven.aliyun.com/repository/jcenter" }
         maven { url "https://maven.aliyun.com/repository/google" }
         mavenCentral()
         mavenLocal()
+        google()
+        jcenter()
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.2.1'
@@ -18,21 +18,13 @@ buildscript {
 
 allprojects {
     repositories {
-//        google()
-//        jcenter()
         maven { url "http://10.100.62.98:8086/nexus/content/groups/public/" }
-        maven { url 'http://pre.haier.com/nexus/content/repositories/qdmobile-release/' }
+        maven { url 'https://dl.bintray.com/trsmobileteamqd/TRS-QD' }
         maven { url "http://mvn.gt.igexin.com/nexus/content/repositories/releases/" }
-        maven {
-            url 'http://maven.wts.xinwen.cn/repository/maven-public'
-            credentials {
-                username 'public-normal-wts'
-                password 'wts!normal?703'
-            }
-        }//新闻报道网上传播分析系统埋点
-        maven { url "https://maven.aliyun.com/repository/jcenter" }
         maven { url "https://maven.aliyun.com/repository/google" }
-
+        maven { url "https://maven.aliyun.com/repository/jcenter" }
+        google()
+        jcenter()
     }
 }
 

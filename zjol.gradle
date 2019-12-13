@@ -59,10 +59,13 @@ ext.readKeys = { buildType ->
     buildType.resValue "string", "passport_default", passport
     buildType.resValue("string", "BUGLY_APPID", properties.getProperty("BUGLY_APPID"))
     buildType.manifestPlaceholders = [
+            // 个推
             GETUI_APP_ID      : properties.getProperty("GETUI_APP_ID"),
             GETUI_APP_SECRET  : properties.getProperty("GETUI_APP_SECRET"),
             GETUI_APP_KEY     : properties.getProperty("GETUI_APP_KEY"),
+            // 个像
             GI_APPID          : properties.getProperty("GI_APPID"),
+            GT_INSTALL_CHANNEL: properties.getProperty("GT_INSTALL_CHANNEL"),
             // 个推 - 小米辅助推送
             XIAOMI_APP_ID     : properties.getProperty("XIAOMI_APP_ID"),
             XIAOMI_APP_KEY    : properties.getProperty("XIAOMI_APP_KEY"),
@@ -76,8 +79,6 @@ ext.readKeys = { buildType ->
             OPPO_APP_SECRET   : properties.getProperty("OPPO_APP_SECRET"),
             //个推 - VIVO 辅助推送
             VIVO_APP_ID       : properties.getProperty("VIVO_APP_ID"),
-            VIVO_APP_KEY      : properties.getProperty("VIVO_APP_KEY"),
-
-            GT_INSTALL_CHANNEL: properties.getProperty("GT_INSTALL_CHANNEL")
+            VIVO_APP_KEY      : properties.getProperty("VIVO_APP_KEY")
     ]
 }

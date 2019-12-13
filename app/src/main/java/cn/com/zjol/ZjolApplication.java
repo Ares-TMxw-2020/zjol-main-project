@@ -3,6 +3,8 @@ package cn.com.zjol;
 import android.app.Activity;
 import android.app.Application;
 import android.content.Context;
+import android.content.res.Resources;
+import android.os.Bundle;
 import android.os.Process;
 import android.support.multidex.MultiDexApplication;
 import android.support.text.emoji.EmojiCompat;
@@ -10,7 +12,9 @@ import android.support.text.emoji.bundled.BundledEmojiCompatConfig;
 import android.support.v4.content.res.ResourcesCompat;
 import android.text.TextUtils;
 
+import com.aliya.compat.CrashCompat;
 import com.aliya.uimode.UiModeManager;
+import com.bumptech.glide.Glide;
 import com.core.glide.GlideMode;
 import com.meituan.android.walle.WalleChannelReader;
 import com.tencent.bugly.crashreport.CrashReport;
@@ -27,27 +31,27 @@ import com.zjrb.passport.ZbConfig;
 import com.zjrb.passport.ZbPassport;
 import com.zjrb.passport.constant.ZbConstants;
 
+import cn.com.zjol.biz.core.Mobsec;
 import cn.com.zjol.biz.core.UserBiz;
 import cn.com.zjol.biz.core.db.CompatV4DB;
 import cn.com.zjol.biz.core.db.SettingManager;
 import cn.com.zjol.biz.core.db.ThemeMode;
 import cn.com.zjol.biz.core.network.DailyNetworkManager;
+import cn.com.zjol.me.util.Contacts;
 import cn.com.zjol.push.Push;
 import cn.com.zjol.push.insight.Insight;
 import cn.com.zjol.quick_login.OneClickLogin;
 import cn.com.zjol.quick_login.common.AbsActivityLifecycleCallbacks;
 import cn.daily.news.analytics.AnalyticsManager;
 import cn.daily.news.update.UpdateManager;
-import zjol.com.cn.news.location.OnLineLocationManager;
+import zjol.com.cn.launcher.SplashActivity;
+import zjol.com.cn.location.OnLineLocationManager;
 
 public class ZjolApplication extends MultiDexApplication {
 
     private Application mApp;
     private boolean debuggable;
     private String mChannel;
-
-//    String ugcLicenceUrl = "http://license.vod2.myqcloud.com/license/v1/f0f7893e23b81fb92c3045690d599d09/TXUgcSDK.licence";
-//    String ugcKey = "b12da8f7f658e110ddcfd9d7f2c33303";
 
     // 正式版
     String ugcLicenceUrl = "http://license.vod2.myqcloud.com/license/v1/5dc9e2376e5650783cb2197bd26661f7/TXUgcSDK.licence";
@@ -79,22 +83,39 @@ public class ZjolApplication extends MultiDexApplication {
 
                 @Override
                 public void run() {
-                    CompatV4DB.dataCleanUp(mApp);
-                    ThemeMode.init(mApp);
                     UiModeManager.init(mApp, null);
+
+                    // 字体提前加载并缓存, 偶现崩溃
+                    try {
+                        ResourcesCompat.getFont(mApp, R.font.fzbiaoysk_zbjt);
+                        ResourcesCompat.getFont(mApp, R.font.fzzcysk_zbjt);
+                    } catch (Resources.NotFoundException e) {
+                        // ignore it.
+                    }
+
                     DatabaseLoader.init(mApp);
                     ReadRecordHelper.initReadIds();
                     GlideMode.setProvincialTraffic(SettingManager.getInstance().isProvincialTraffic());
                     Push.init(mApp);
                     Insight.init(mApp);
-                    initOneClickLogin();
+                    Contacts.init(mApp);
+                    OneClickLogin.init(mApp, "ad356081117148588b7c2376333de0a5");
                     //放在所有初始化的最后面，防止其他第三方SDK重写UncaughtExceptionHandler被覆盖
                     initCrashHandler(debuggable);
+
+                    getTheme().applyStyle(R.style.FangZhengFontTheme, false);
+
+                    // 网易易盾初始化
+                    Mobsec.init(getApplicationContext(), "YD00980345767024");
+                    // Glide 提前初始化Bugly统计并发异常
+                    Glide.get(getApplicationContext());
+                    initOneClickLogin();
                 }
             }).start();
         } else {
             UiModeManager.init(mApp, null);
         }
+        registerActivityLifecycleCallbacks(mLifecycleCallbacks);
     }
 
     /**
@@ -105,7 +126,7 @@ public class ZjolApplication extends MultiDexApplication {
         registerActivityLifecycleCallbacks(new AbsActivityLifecycleCallbacks() {
             @Override
             public void onActivityStarted(Activity activity) {
-                OneClickLogin.fitChinaMobileTypeface(activity, ResourcesCompat.getFont(activity, R.font.fzbiaoysk_zbjt));
+                OneClickLogin.fitChinaMobileTypeface(activity, R.font.fzbiaoysk_zbjt);
             }
         });
     }
@@ -189,5 +210,43 @@ public class ZjolApplication extends MultiDexApplication {
         CrashReport.setAppChannel(this, mChannel);
         // 设置唯一设备值
         CrashReport.setUserId(AppUtils.getUniquePsuedoID());
+
+        CrashCompat.fixBug(); // 必须在 Bugly 初始化之后
     }
+
+    private ActivityLifecycleCallbacks mLifecycleCallbacks = new ActivityLifecycleCallbacks() {
+
+        @Override
+        public void onActivityCreated(Activity activity, Bundle savedInstanceState) {
+            if (!(activity instanceof SplashActivity)) {
+                // 全局修改TextView字体，第二个参数:false 表示不强制覆盖原主题设置过的字体
+                activity.getTheme().applyStyle(R.style.FangZhengFontTheme, false);
+            }
+        }
+
+        @Override
+        public void onActivityStarted(Activity activity) {
+            OneClickLogin.fitChinaMobileTypeface(activity, R.font.fzbiaoysk_zbjt);
+        }
+
+        @Override
+        public void onActivityResumed(Activity activity) {
+        }
+
+        @Override
+        public void onActivityPaused(Activity activity) {
+        }
+
+        @Override
+        public void onActivityStopped(Activity activity) {
+        }
+
+        @Override
+        public void onActivitySaveInstanceState(Activity activity, Bundle outState) {
+        }
+
+        @Override
+        public void onActivityDestroyed(Activity activity) {
+        }
+    };
 }

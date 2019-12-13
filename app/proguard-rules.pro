@@ -311,6 +311,14 @@
 -keep class zjol.com.cn.topic.bean.** { *; }
 -keepnames class zjol.com.cn.topic.bean.** { *; }
 
+## 列表库
+-keep class zjol.com.cn.list.bean.** { *; }
+-keepnames class zjol.com.cn.list.bean.** { *; }
+
+## 评论
+-keep class cn.com.zjol.comment.model.** { *; }
+-keepnames class cn.com.zjol.comment.model.** { *; }
+
 
 #-------------------------------------------------------------------------
 
@@ -506,6 +514,7 @@ public static java.lang.String TABLENAME;
 -dontwarn javax.annotation.Nullable
 -dontwarn javax.annotation.ParametersAreNonnullByDefault
 ### Glide
+-keep class com.bumptech.glide.GeneratedAppGlideModuleImpl { *; }
 -keep public class * implements com.bumptech.glide.module.GlideModule
 -keep public class * extends com.bumptech.glide.AppGlideModule
 -keep public enum com.bumptech.glide.load.resource.bitmap.ImageHeaderParser$** {
@@ -516,6 +525,9 @@ public static java.lang.String TABLENAME;
 -dontwarn com.bumptech.glide.load.engine.bitmap_recycle.LruBitmapPool
 -dontwarn com.bumptech.glide.load.resource.bitmap.Downsampler
 -dontwarn com.bumptech.glide.load.resource.bitmap.HardwareConfigState
+
+### exoplayer播放器
+-keep class com.google.android.exoplayer.** {*;}
 
 ### bugly
 -dontwarn com.tencent.bugly.**
