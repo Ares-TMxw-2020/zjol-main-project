@@ -81,7 +81,7 @@ configurations.all {
         force 'cn.daily.android:update:6.0.0.12'
         force 'cn.daily.android:analytics:6.1.0.6'
         force 'cn.daily.android:passport:1.0.0.0'
-        force 'cn.daily.android:audiohelper:1.0.4'
+        force 'cn.daily.android:audiohelper:1.0.5'
 
         force 'cn.daily.android:common-core:1.1.0.3'
         force 'com.aliya:android-uimode:2.2.1'
