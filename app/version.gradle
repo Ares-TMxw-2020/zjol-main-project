@@ -111,7 +111,7 @@ configurations.all {
         force 'cn.com.zjol:launcher:1.2.0.1'
         force 'cn.com.zjol:player:0.0.4.17'
         force 'cn.com.zjol:topic:0.0.2.3'
-        force 'cn.com.zjol:list:0.0.2.13'
+        force 'cn.com.zjol:list:0.0.2.14'
     }
 }
 
