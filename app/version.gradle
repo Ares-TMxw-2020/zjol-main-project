@@ -97,7 +97,7 @@ configurations.all {
         force 'cn.com.zjol:push:0.0.1.11'
         force 'cn.com.zjol:detail:1.1.0.15'
         force 'cn.com.zjol:service:0.0.1.20'
-        force 'cn.com.zjol:video_ugc:1.2.0.0'
+        force 'cn.com.zjol:video_ugc:1.2.0.1'
         force 'cn.com.zjol:video_choose:1.2.0.3'
         force 'cn.com.zjol:video-music:1.1.0.0'
         force 'cn.com.zjol:topic-choose:0.0.1.5'
