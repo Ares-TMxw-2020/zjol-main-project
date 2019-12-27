@@ -79,6 +79,8 @@ public class ZjolApplication extends MultiDexApplication {
             initAnalytic(debuggable);
             BundledEmojiCompatConfig compatConfig = new BundledEmojiCompatConfig(this);
             EmojiCompat.init(compatConfig);
+            DatabaseLoader.init(mApp);
+            ReadRecordHelper.initReadIds();
             new Thread(new Runnable() {
 
                 @Override
@@ -92,9 +94,6 @@ public class ZjolApplication extends MultiDexApplication {
                     } catch (Resources.NotFoundException e) {
                         // ignore it.
                     }
-
-                    DatabaseLoader.init(mApp);
-                    ReadRecordHelper.initReadIds();
                     GlideMode.setProvincialTraffic(SettingManager.getInstance().isProvincialTraffic());
                     Push.init(mApp);
                     Insight.init(mApp);
