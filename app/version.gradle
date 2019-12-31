@@ -110,7 +110,7 @@ configurations.all {
         force 'cn.com.zjol:comment:0.0.1.8'
         force 'cn.com.zjol:launcher:1.2.0.3'
         force 'cn.com.zjol:player:0.0.4.24'
-        force 'cn.com.zjol:topic:0.0.2.6'
+        force 'cn.com.zjol:topic:0.0.2.7'
         force 'cn.com.zjol:list:0.0.2.25'
     }
 }
