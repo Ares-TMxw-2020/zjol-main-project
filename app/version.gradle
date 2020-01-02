@@ -92,7 +92,7 @@ configurations.all {
         force 'cn.daily.android:tab-layout:0.0.1'
 
         //浙江在线模块依赖
-        force 'cn.com.zjol:biz-core:1.2.0.42'
+        force 'cn.com.zjol:biz-core:1.2.0.43'
         force 'cn.com.zjol:me:1.2.0.23'
         force 'cn.com.zjol:push:0.0.1.11'
         force 'cn.com.zjol:detail:1.1.0.22'
