@@ -106,7 +106,7 @@ configurations.all {
         force 'cn.com.zjol:user-home:1.2.0.11'
         force 'cn.com.zjol:location:1.1.0.0'
         force 'cn.com.zjol:quick-login:1.2.0.0'
-        force 'cn.com.zjol:news:1.2.0.1'
+        force 'cn.com.zjol:news:1.2.0.2'
         force 'cn.com.zjol:comment:0.0.1.8'
         force 'cn.com.zjol:launcher:1.2.0.3'
         force 'cn.com.zjol:player:0.0.4.27'
