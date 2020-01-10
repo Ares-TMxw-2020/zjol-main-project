@@ -11,7 +11,6 @@ import android.support.text.emoji.EmojiCompat;
 import android.support.text.emoji.bundled.BundledEmojiCompatConfig;
 import android.support.v4.content.res.ResourcesCompat;
 import android.text.TextUtils;
-
 import com.aliya.compat.CrashCompat;
 import com.aliya.uimode.UiModeManager;
 import com.bumptech.glide.Glide;
@@ -30,12 +29,9 @@ import com.zjrb.daily.db.ReadRecordHelper;
 import com.zjrb.passport.ZbConfig;
 import com.zjrb.passport.ZbPassport;
 import com.zjrb.passport.constant.ZbConstants;
-
 import cn.com.zjol.biz.core.Mobsec;
 import cn.com.zjol.biz.core.UserBiz;
-import cn.com.zjol.biz.core.db.CompatV4DB;
 import cn.com.zjol.biz.core.db.SettingManager;
-import cn.com.zjol.biz.core.db.ThemeMode;
 import cn.com.zjol.biz.core.network.DailyNetworkManager;
 import cn.com.zjol.me.util.Contacts;
 import cn.com.zjol.push.Push;
@@ -79,6 +75,8 @@ public class ZjolApplication extends MultiDexApplication {
             initAnalytic(debuggable);
             BundledEmojiCompatConfig compatConfig = new BundledEmojiCompatConfig(this);
             EmojiCompat.init(compatConfig);
+            DatabaseLoader.init(mApp);
+            ReadRecordHelper.initReadIds();
             new Thread(new Runnable() {
 
                 @Override
@@ -92,9 +90,6 @@ public class ZjolApplication extends MultiDexApplication {
                     } catch (Resources.NotFoundException e) {
                         // ignore it.
                     }
-
-                    DatabaseLoader.init(mApp);
-                    ReadRecordHelper.initReadIds();
                     GlideMode.setProvincialTraffic(SettingManager.getInstance().isProvincialTraffic());
                     Push.init(mApp);
                     Insight.init(mApp);

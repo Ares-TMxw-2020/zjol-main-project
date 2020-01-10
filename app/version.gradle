@@ -12,6 +12,7 @@ configurations.all {
         force 'android.arch.lifecycle:extensions:1.1.1'
         force 'com.android.support:support-emoji-bundled:28.0.0'
         force 'com.android.support:support-emoji-appcompat:28.0.0'
+        force 'com.android.support:palette-v7:28.0.0'
 
         //第三方依赖
         force 'com.google.android:flexbox:0.3.0'
@@ -62,7 +63,7 @@ configurations.all {
         // 个推个像
         force 'com.getui:gisdk:3.1.9.0'
         //一键登录
-        force 'com.netease.android:quicklogin_libary-external-release:1.0.0'
+        force 'com.netease.android:quicklogin_libary-external-release:1.5.3'
         force 'com.netease.android:CMCCSSOSDK-release:5.6.6.1'
         force 'com.netease.android:CTAccount_sdk_api:3.7.0_all'
         force 'com.netease.android:Ui-factory_oauth_mobile:3.8.3'
@@ -70,7 +71,7 @@ configurations.all {
         //内部通用依赖
         force 'cn.daily.android:share:0.0.1'
         force 'cn.daily.android:common-webview:1.0.1'
-        force 'com.aliya:ratioview:1.0.0'
+        force 'com.aliya:ratioview:1.0.1'
         force 'com.aliya:fitwindow:1.0.0'
         force 'com.core:network:0.1.4'
         force 'com.aliya:bannerview:2.1.0'
@@ -81,7 +82,7 @@ configurations.all {
         force 'cn.daily.android:update:6.0.0.12'
         force 'cn.daily.android:analytics:6.1.0.6'
         force 'cn.daily.android:passport:1.0.0.0'
-        force 'cn.daily.android:audiohelper:1.0.4'
+        force 'cn.daily.android:audiohelper:1.0.5'
 
         force 'cn.daily.android:common-core:1.1.0.3'
         force 'com.aliya:android-uimode:2.2.1'
@@ -91,26 +92,26 @@ configurations.all {
         force 'cn.daily.android:tab-layout:0.0.1'
 
         //浙江在线模块依赖
-        force 'cn.com.zjol:launcher:1.1.0.5'
-        force 'cn.com.zjol:news:0.0.2.95'
-        force 'cn.com.zjol:me:1.1.2.5'
-        force 'cn.com.zjol:biz-core:1.1.2.1'
+        force 'cn.com.zjol:biz-core:1.2.0.47'
+        force 'cn.com.zjol:me:1.2.0.30'
         force 'cn.com.zjol:push:0.0.1.11'
-        force 'cn.com.zjol:player:0.0.2.129'
-        force 'cn.com.zjol:detail:1.1.0.12'
+        force 'cn.com.zjol:detail:1.1.0.25'
         force 'cn.com.zjol:service:0.0.1.20'
-        force 'cn.com.zjol:video_ugc:0.0.62'
-        force 'cn.com.zjol:video_choose:0.0.10'
+        force 'cn.com.zjol:video_ugc:1.2.0.5'
+        force 'cn.com.zjol:video_choose:1.2.0.4'
         force 'cn.com.zjol:video-music:1.1.0.0'
         force 'cn.com.zjol:topic-choose:0.0.1.5'
-        force 'cn.com.zjol:search:1.1.2.2'
+        force 'cn.com.zjol:search:1.2.0.10'
         force 'cn.com.zjol:scanner:0.0.1.1'
-        force 'cn.com.zjol:user-home:1.1.0.14'
+        force 'cn.com.zjol:user-home:1.2.0.11'
         force 'cn.com.zjol:location:1.1.0.0'
-        force 'cn.com.zjol:topic:0.0.1.67'
-        force 'cn.com.zjol:quick-login:1.1.0.0'
-        force 'cn.com.zjol:list:0.0.1.8'
-        force 'cn.com.zjol:comment:0.0.1.7'
+        force 'cn.com.zjol:quick-login:1.2.0.0'
+        force 'cn.com.zjol:news:1.2.0.4'
+        force 'cn.com.zjol:comment:0.0.1.8'
+        force 'cn.com.zjol:launcher:1.2.0.3'
+        force 'cn.com.zjol:player:0.0.4.29'
+        force 'cn.com.zjol:topic:0.0.2.7'
+        force 'cn.com.zjol:list:0.0.2.26'
     }
 }
 
@@ -125,6 +126,7 @@ dependencies {
     implementation 'android.arch.lifecycle:extensions:1.1.1'
     implementation 'com.android.support:support-emoji-bundled:28.0.0'
     implementation 'com.android.support:support-emoji-appcompat:28.0.0'
+    implementation 'com.android.support:palette-v7:28.0.0'
 
     //第三方依赖
     implementation 'com.google.android:flexbox:0.3.0'

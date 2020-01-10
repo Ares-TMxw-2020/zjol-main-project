@@ -64,4 +64,8 @@
     <!--签名校检-->
     <string name="app_md5">C3:1A:7E:DC:10:2C:5F:62:C7:0C:9F:FF:17:BA:1C:2C</string>
     <string name="app_sha1">74:26:2E:65:CD:9D:E8:3C:AA:06:2E:71:02:68:A7:9A:27:E4:7C:FA</string>
+
+    <!--主页定制-->
+    <string name="index_url">https://tm.zjol.com.cn/native/user_page.html?id=5de4b29d2ce53f00012ff8bb</string>
+    <string name="index_channel">gsjj</string>
 </resources>
