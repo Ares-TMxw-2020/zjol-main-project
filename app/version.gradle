@@ -111,7 +111,7 @@ configurations.all {
         force 'cn.com.zjol:news:1.2.1.0'
         force 'cn.com.zjol:comment:0.0.1.8'
         force 'cn.com.zjol:launcher:1.2.0.4'
-        force 'cn.com.zjol:player:0.0.4.29-SNAPSHOT'
+        force 'cn.com.zjol:player:0.0.4.30'
         force 'cn.com.zjol:topic:0.0.2.7'
         force 'cn.com.zjol:list:0.0.2.26'
     }
